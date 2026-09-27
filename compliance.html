@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VertEx — Premium Elevator & Escalator Maintenance</title>
+  <meta name="description" content="VertEx offers world-class elevator and escalator installation, maintenance, modernization, and compliance services with a 99.7% uptime guarantee." />
+  <meta name="theme-color" content="#C9943A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+<header id="main-header">
+  <div class="container nav-inner">
+
+    <!-- Logo -->
+    <a class="nav-logo" href="index.html">
+      <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" />
+      <div class="nav-logo-text">
+        <span class="brand-name">VertEx</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <nav class="nav-links" aria-label="Main navigation">
+
+      <!-- Home Dropdown -->
+      <div class="nav-item" data-dropdown data-views="view-home1,view-home2">
+        <span class="nav-link" tabindex="0" id="nav-home">
+          Home
+          <svg class="caret" viewBox="0 0 16 16" fill="currentColor"><path d="M4 6l4 4 4-4"/></svg>
+        </span>
+        <div class="nav-dropdown" role="menu">
+          <a class="dropdown-item" href="index.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-building"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">Home 1</span>
+              <span class="dd-desc">Classic professional layout</span>
+            </span>
+          </a>
+          <a class="dropdown-item" href="home2.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-gear"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">Home 2</span>
+              <span class="dd-desc">Industrial dark split view</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="about.html" tabindex="0">About</a>
+      <a class="nav-link" href="services.html" tabindex="0">Services</a>
+      <a class="nav-link" href="compliance.html" tabindex="0">Compliance</a>
+      <a class="nav-link" href="pricing.html" tabindex="0">Pricing</a>
+      <a class="nav-link" href="contact.html" tabindex="0">Contact</a>
+
+      <!-- Dashboard Dropdown -->
+      <div class="nav-item" data-dropdown data-views="view-dashboard-user,view-dashboard-admin">
+        <span class="nav-link" tabindex="0">
+          Dashboard
+          <svg class="caret" viewBox="0 0 16 16" fill="currentColor"><path d="M4 6l4 4 4-4"/></svg>
+        </span>
+        <div class="nav-dropdown" role="menu">
+          <a class="dropdown-item" href="dashboard-user.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-user"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">User Dashboard</span>
+              <span class="dd-desc">Client portal & tickets</span>
+            </span>
+          </a>
+          <a class="dropdown-item" href="dashboard-admin.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-shield-check"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">Admin Dashboard</span>
+              <span class="dd-desc">Operations overview</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Right Controls -->
+    <div class="nav-controls">
+      <!-- RTL/LTR Toggle -->
+      <button class="dir-toggle" id="dir-toggle" aria-label="Toggle text direction" title="Toggle RTL/LTR">
+        <span class="dir-icon"><i class="ph ph-arrows-left-right"></i></span>
+        <span class="dir-label" id="dir-label">LTR</span>
+      </button>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+        <span class="icon-moon"><i class="ph ph-moon"></i></span>
+        <span class="icon-sun"><i class="ph ph-sun"></i></span>
+      </button>
+
+      <!-- Login CTA -->
+      <a class="nav-login-btn" href="login.html" style="cursor:pointer">Client Login</a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <div class="mobile-nav-link" data-submenu="mob-home-sub">
+    Home <span class="mobile-caret" style="transition:transform .3s">▾</span>
+  </div>
+  <div class="mobile-submenu" id="mob-home-sub">
+    <a class="mobile-sub-link" href="index.html"><i class="ph ph-building"></i> Home 1</a>
+    <a class="mobile-sub-link" href="home2.html"><i class="ph ph-gear"></i> Home 2</a>
+  </div>
+  <a class="mobile-nav-link" href="about.html">About</a>
+  <a class="mobile-nav-link" href="services.html">Services</a>
+  <a class="mobile-nav-link" href="compliance.html">Compliance</a>
+  <a class="mobile-nav-link" href="pricing.html">Pricing</a>
+  <a class="mobile-nav-link" href="contact.html">Contact</a>
+  <div class="mobile-nav-link" data-submenu="mob-dash-sub">
+    Dashboard <span class="mobile-caret" style="transition:transform .3s">▾</span>
+  </div>
+  <div class="mobile-submenu" id="mob-dash-sub">
+    <a class="mobile-sub-link" href="dashboard-user.html"><i class="ph ph-user"></i> User Dashboard</a>
+    <a class="mobile-sub-link" href="dashboard-admin.html"><i class="ph ph-shield-check"></i> Admin Dashboard</a>
+  </div>
+  <div class="mobile-controls">
+    <button class="dir-toggle" onclick="document.getElementById('dir-toggle').click()" style="font-size:.8rem"><i class="ph ph-arrows-left-right"></i> <span id="mob-dir-label">LTR</span></button>
+    <button class="theme-toggle" onclick="document.getElementById('theme-toggle').click()" style="position:relative">
+      <span class="icon-moon"><i class="ph ph-moon"></i></span><span class="icon-sun"><i class="ph ph-sun"></i></span>
+    </button>
+    <a class="btn btn-gold btn-sm" href="login.html">Client Login</a>
+  </div>
+</div>
+<main id="page-content">
+
+  <div class="compliance-hero section-sm" style="background:linear-gradient(135deg,rgba(13,17,23,.9) 0%,rgba(13,17,23,.7) 100%), url('assets/images/compliance_hero.png') center/cover; position:relative;">
+    <div class="container">
+      <div class="section-label" style="justify-content:center">Regulatory Excellence</div>
+      <h1 class="font-display text-5xl font-bold" style="margin-bottom:1rem">Compliance & Certification</h1>
+      <div class="gold-divider center"></div>
+      <p class="text-secondary" style="max-width:600px; margin:1.5rem auto 0; font-size:.95rem; line-height:1.7">We navigate the full landscape of vertical transport regulations so you don't have to. Every certificate is managed, tracked, and renewed on your behalf.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="compliance-grid">
+        <div class="compliance-card"><div class="compliance-icon"><i class="ph ph-medal"></i></div><div class="compliance-name">EN 81 Series</div><div class="compliance-body">Full compliance with European elevator safety norms covering design, installation, and operation of passenger and goods lifts.</div><div class="compliance-standard">EN 81-1 / 81-2 / 81-20</div></div>
+        <div class="compliance-card"><div class="compliance-icon"><i class="ph ph-ruler"></i></div><div class="compliance-name">ASME A17.1</div><div class="compliance-body">American National Standard for elevators, escalators, and related equipment. Applicable for internationally-oriented facilities.</div><div class="compliance-standard">Safety Code</div></div>
+        <div class="compliance-card"><div class="compliance-icon"><i class="ph ph-shield-check"></i></div><div class="compliance-name">ISO 9001:2015</div><div class="compliance-body">Our entire service delivery is governed by ISO 9001 quality management, ensuring consistent, auditable, and traceable outcomes.</div><div class="compliance-standard">Quality Management</div></div>
+        <div class="compliance-card"><div class="compliance-icon"><i class="ph ph-lightning"></i></div><div class="compliance-name">Electrical Safety</div><div class="compliance-body">IEC and local electrical authority certification for all powered components. Annual wiring inspections included in maintenance contracts.</div><div class="compliance-standard">IEC 60364</div></div>
+        <div class="compliance-card"><div class="compliance-icon"><i class="ph ph-wheelchair"></i></div><div class="compliance-name">Accessibility Standards</div><div class="compliance-body">Ensuring all lifts meet ADA, BS 8300, and local accessibility regulations for disabled and elderly users.</div><div class="compliance-standard">ADA / BS 8300</div></div>
+        <div class="compliance-card"><div class="compliance-icon"><i class="ph ph-fire"></i></div><div class="compliance-name">Fire Safety Lifts</div><div class="compliance-body">Dedicated firefighter lift certification and testing in compliance with BS EN 81-72 for high-rise buildings.</div><div class="compliance-standard">EN 81-72 / 81-73</div></div>
+      </div>
+
+      <!-- Compliance CTA -->
+      <div style="background:linear-gradient(135deg,rgba(201,148,58,.08),rgba(201,148,58,.03)); border:1px solid rgba(201,148,58,.2); border-radius:var(--radius-xl); padding:3rem; text-align:center; margin-top:3rem">
+        <div style="font-size:2.5rem; margin-bottom:1rem"><i class="ph ph-clipboard"></i></div>
+        <h2 class="font-display text-3xl font-bold" style="margin-bottom:.75rem">Access Your Certificates Online</h2>
+        <p class="text-secondary" style="max-width:480px; margin:0 auto 2rem; font-size:.9rem">All compliance certificates are stored securely in your client portal — downloadable anytime for audits, insurance, and regulatory reviews.</p>
+        <a class="btn btn-gold btn-lg" href="dashboard-user.html">View My Certificates</a>
+      </div>
+    </div>
+  </div>
+  <!-- [SECTION 3] Quality Assurance -->
+  <div class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:4rem; flex-wrap:wrap">
+        <div style="flex:1; min-width:300px;">
+          <img src="assets/images/quality_audit.png" alt="Elevator Quality Assurance Audit" style="width:100%; border-radius:var(--radius-lg); box-shadow:0 20px 40px rgba(0,0,0,0.2)"/>
+        </div>
+        <div style="flex:1; min-width:300px;">
+          <div class="section-label">Internal Audit</div>
+          <h2 class="font-display text-4xl font-bold" style="margin-bottom:2rem">Rigorous Quality Assurance</h2>
+          <div style="display:flex; flex-direction:column; gap:2rem;">
+            <div>
+              <h3 class="text-xl font-bold mb-2" style="display:flex; align-items:center; gap:0.5rem"><i class="ph ph-shield-check text-gold"></i> Independent Verification</h3>
+              <p class="text-secondary">Every major installation or modernization is verified by an independent third-party QEI (Qualified Elevator Inspector) before passenger use.</p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2" style="display:flex; align-items:center; gap:0.5rem"><i class="ph ph-list-checks text-gold"></i> Digital Checklists</h3>
+              <p class="text-secondary">Technicians follow strict, digitally enforced 50-point checklists for routine maintenance, permanently logged in your client portal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- [SECTION 4] Certifications Viewer -->
+  <div class="section" style="background:var(--bg-primary)">
+    <div class="container text-center">
+      <div class="section-label" style="justify-content:center">Transparency</div>
+      <h2 class="font-display text-4xl font-bold" style="margin-bottom:3rem">Our Licenses & Certifications</h2>
+      <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap">
+        <div class="card-glass" style="padding:2rem; width:200px">
+          <i class="ph ph-certificate text-5xl text-gold mb-4"></i>
+          <div class="font-bold">ISO 9001</div>
+          <div class="text-sm text-secondary">Quality Mgmt</div>
+        </div>
+        <div class="card-glass" style="padding:2rem; width:200px">
+          <i class="ph ph-certificate text-5xl text-gold mb-4"></i>
+          <div class="font-bold">ISO 14001</div>
+          <div class="text-sm text-secondary">Environmental</div>
+        </div>
+        <div class="card-glass" style="padding:2rem; width:200px">
+          <i class="ph ph-certificate text-5xl text-gold mb-4"></i>
+          <div class="font-bold">OHSAS 18001</div>
+          <div class="text-sm text-secondary">Safety Mgmt</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- [SECTION 5] Sustainability -->
+  <div class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div style="display:flex; gap:4rem; align-items:center">
+        <div style="flex:1">
+          <img src="assets/images/green_compliance.png" alt="Eco-friendly green elevator technology" style="width:100%; border-radius:var(--radius-lg); box-shadow:0 20px 40px rgba(0,0,0,0.2)"/>
+        </div>
+        <div style="flex:2">
+          <div class="section-label">Green Compliance</div>
+          <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.5rem">Sustainability First</h2>
+          <p class="text-secondary mb-4">We help buildings achieve LEED certification by installing regenerative drives that feed power back into the grid and utilizing environmentally friendly, biodegradable hydraulic fluids.</p>
+          <a class="btn btn-outline" href="contact.html">Learn about Green Lifts</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- [SECTION 6] CTA -->
+  <div class="section" style="background:linear-gradient(135deg, rgba(13,17,23,.92) 0%, rgba(13,17,23,.75) 100%), url('assets/images/footer_cta_bg.jpg') center/cover; position:relative; border-top:1px solid var(--border-subtle); color:#fff;">
+    <div class="container text-center">
+      <div class="section-label" style="color:var(--gold); justify-content:center">Take Action</div>
+      <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.5rem">Request a Compliance Audit</h2>
+      <p style="color:rgba(255,255,255,.7); max-width:600px; margin:0 auto 2rem">Ensure your property meets all local and international safety codes. Book a comprehensive audit today.</p>
+      <a class="btn btn-gold btn-lg" href="contact.html">Book Audit</a>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-col-brand">
+          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem">
+            <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" style="width:48px; height:48px;"/>
+            <div class="footer-brand-name" style="margin:0">VertEx</div>
+          </div>
+          <p class="footer-brand-desc" style="margin-bottom:1.5rem">25 years of precision. One mission: keeping the world moving — safely upward.</p>
+                    <div class="footer-socials">
+            <a href="#" class="footer-social" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" class="footer-social" title="Twitter"><i class="ph ph-x-logo"></i></a>
+            <a href="#" class="footer-social" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="footer-social" title="Facebook"><i class="ph ph-facebook-logo"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="about.html">About Us</a>
+          <a class="footer-link" href="services.html">Services</a>
+          <a class="footer-link" href="compliance.html">Compliance</a>
+          <a class="footer-link" href="pricing.html">Pricing</a>
+          <a class="footer-link" href="contact.html">Contact</a>
+        </div>
+
+        <!-- Client Zone -->
+        <div>
+          <div class="footer-heading">Client Zone</div>
+          <a class="footer-link" href="login.html">Client Login</a>
+          <a class="footer-link" href="dashboard-user.html">My Dashboard</a>
+          <a class="footer-link" href="dashboard-admin.html">Admin Portal</a>
+          <a class="footer-link" href="dashboard-user.html">Service Tickets</a>
+        </div>
+
+        <!-- Contact Us -->
+        <div>
+          <div class="footer-heading">Contact Us</div>
+          <a class="footer-link" href="contact.html" style="display:flex; align-items:flex-start; gap:0.5rem">
+            <i class="ph ph-map-pin" style="margin-top:4px; color:var(--gold); font-size:1.1rem"></i>
+            <span>VertEx Tower, 12th Floor<br>Sheikh Zayed Road, Dubai</span>
+          </a>
+          <a class="footer-link" href="tel:+97140001234" style="display:flex; align-items:center; gap:0.5rem">
+            <i class="ph ph-phone" style="color:var(--gold); font-size:1.1rem"></i> +971 4 000 1234
+          </a>
+          <a class="footer-link" href="mailto:hello@vertexlift.com" style="display:flex; align-items:center; gap:0.5rem">
+            <i class="ph ph-envelope-simple" style="color:var(--gold); font-size:1.1rem"></i> hello@vertexlift.com
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 VertEx. All rights reserved.</span>
+        <div class="footer-legal" style="display:flex; gap:1.5rem; flex-wrap:wrap">
+          <a href="#" class="footer-link" style="padding:0">Privacy Policy</a>
+          <a href="#" class="footer-link" style="padding:0">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+<!-- ════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════ -->
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VertEx — Premium Elevator & Escalator Maintenance</title>
+  <meta name="description" content="VertEx offers world-class elevator and escalator installation, maintenance, modernization, and compliance services with a 99.7% uptime guarantee." />
+  <meta name="theme-color" content="#C9943A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>#page-content { margin-top: 0 !important; }</style>
+</head>
+<body>
+<main id="page-content">
+
+  <div class="dashboard-wrapper">
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-header">
+        <a class="nav-logo" href="index.html">
+          <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" />
+          <div class="nav-logo-text" style="display:flex; flex-direction:column">
+            <span class="brand-name">VertEx</span>
+          </div>
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="sidebar-section-label">Management</div>
+        <div class="sidebar-link active" data-dash-panel="admin-overview"><div class="s-icon"><i class="ph ph-chart-bar"></i></div><span class="s-label">Overview</span></div>
+        <div class="sidebar-link" data-dash-panel="admin-clients"><div class="s-icon"><i class="ph ph-building"></i></div><span class="s-label">All Clients</span><span class="sidebar-badge">500</span></div>
+        <div class="sidebar-link" data-dash-panel="admin-tickets"><div class="s-icon"><i class="ph ph-ticket"></i></div><span class="s-label">All Tickets</span><span class="sidebar-badge">24</span></div>
+        <div class="sidebar-link" data-dash-panel="admin-engineers"><div class="s-icon"><i class="ph ph-hard-hat"></i></div><span class="s-label">Engineers</span></div>
+        <div class="sidebar-section-label" style="margin-top:.75rem">Reports</div>
+        <div class="sidebar-link" data-dash-panel="admin-analytics"><div class="s-icon"><i class="ph ph-trend-up"></i></div><span class="s-label">Analytics</span></div>
+        <a href="index.html" class="sidebar-link" style="text-decoration:none; color:inherit">
+          <div class="s-icon"><i class="ph ph-arrow-left"></i></div><span class="s-label">Back to Website</span>
+        </a>
+        <a href="login.html" class="sidebar-link" style="text-decoration:none; color:inherit">
+          <div class="s-icon"><i class="ph ph-door"></i></div><span class="s-label" style="color:var(--danger, #EF4444)">Sign Out</span>
+        </a>
+      </nav>
+    </aside>
+    <div class="dashboard-main">
+
+      <!-- Dashboard Header -->
+      <header class="dashboard-header">
+        <div class="dashboard-header-left">
+
+          <div class="dashboard-breadcrumbs">
+            <span>Client Portal</span>
+            <i class="ph ph-caret-right" style="font-size:0.7rem"></i>
+            <span class="active" id="breadcrumb-active">Overview</span>
+          </div>
+        </div>
+        <div class="dashboard-header-right">
+          <div class="dashboard-search">
+            <i class="ph ph-magnifying-glass"></i>
+            <input type="text" placeholder="Search portal..." />
+          </div>
+          <button class="dashboard-tool-btn dir-toggle" id="dir-toggle">
+            <span id="dir-label" style="font-size:0.7rem; font-weight:700">LTR</span>
+          </button>
+          <button class="dashboard-tool-btn theme-toggle" id="theme-toggle">
+            <i class="ph ph-moon"></i>
+          </button>
+          <div class="header-user-profile">
+            <div class="header-avatar" style="background:linear-gradient(135deg,var(--navy),var(--navy-light)); color:#fff">AD</div>
+            <div class="header-user-info">
+              <span class="header-user-name">Admin Portal</span>
+              <span class="header-user-role">Operations</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="dashboard-content">
+        <div class="dash-panel active" id="admin-overview">
+          <div class="dashboard-topbar">
+            <div><div class="dashboard-title">Operations Overview <i class="ph ph-shield-check"></i></div><div class="dashboard-subtitle">Live status · As of Sep 15, 2026 · 12:58 GST</div></div>
+            <div class="dashboard-actions">
+              <span class="btn btn-outline btn-sm"><i class="ph ph-arrow-down"></i> Export Report</span>
+              <span class="btn btn-gold btn-sm">+ Dispatch Engineer</span>
+            </div>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card"><span class="stat-card-label">Total Clients</span><span class="stat-card-value gold">512</span><span class="stat-card-change up">↑ 8 new this month</span><span class="stat-card-icon"><i class="ph ph-building"></i></span></div>
+            <div class="stat-card"><span class="stat-card-label">Active Tickets</span><span class="stat-card-value">24</span><span class="stat-card-change down">↑ 3 from yesterday</span><span class="stat-card-icon"><i class="ph ph-ticket"></i></span></div>
+            <div class="stat-card"><span class="stat-card-label">Engineers On Duty</span><span class="stat-card-value">18</span><span class="stat-card-change neutral">6 on-site · 12 available</span><span class="stat-card-icon"><i class="ph ph-hard-hat"></i></span></div>
+            <div class="stat-card"><span class="stat-card-label">Fleet Uptime SLA</span><span class="stat-card-value gold">99.4%</span><span class="stat-card-change up">↑ Above target</span><span class="stat-card-icon"><i class="ph ph-lightning"></i></span></div>
+          </div>
+          <div class="chart-box">
+            <div class="chart-header"><div><div class="chart-title">Portfolio Uptime — Last 6 Months</div><div class="chart-subtitle">Average across all 512 client properties</div></div><span class="badge badge-green"><span class="dot dot-green"></span>Live</span></div>
+            <div id="uptime-chart"></div>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem">
+            <div class="chart-box">
+              <div class="chart-header"><div class="chart-title">Active Emergency Calls</div></div>
+              <div style="display:flex; flex-direction:column; gap:.6rem">
+                <div style="display:flex; align-items:center; justify-content:space-between; padding:.75rem; background:rgba(239,68,68,.08); border:1px solid rgba(239,68,68,.2); border-radius:var(--radius-md)">
+                  <div><div style="font-weight:600; font-size:.85rem; color:var(--text-primary)">Metro Plaza — Unit 3</div><div style="font-size:.75rem; color:var(--text-muted)">Door fault · Dispatched 11:42 AM</div></div>
+                  <span class="badge badge-red">En Route</span>
+                </div>
+                <div style="display:flex; align-items:center; justify-content:space-between; padding:.75rem; background:rgba(234,179,8,.08); border:1px solid rgba(234,179,8,.2); border-radius:var(--radius-md)">
+                  <div><div style="font-weight:600; font-size:.85rem; color:var(--text-primary)">Pinnacle Hotel — Escalator B</div><div style="font-size:.75rem; color:var(--text-muted)">Speed anomaly · Dispatched 12:01 PM</div></div>
+                  <span class="badge badge-yellow">On-Site</span>
+                </div>
+              </div>
+            </div>
+            <div class="chart-box">
+              <div class="chart-header"><div class="chart-title">Today's Schedule</div></div>
+              <div style="display:flex; flex-direction:column; gap:.6rem; font-size:.85rem">
+                <div style="display:flex; justify-content:space-between; padding:.6rem .75rem; background:var(--bg-elevated); border-radius:var(--radius-sm)"><span style="color:var(--text-primary); font-weight:500">09:00 — Skyline Towers annual inspection</span><span class="badge badge-blue">Done</span></div>
+                <div style="display:flex; justify-content:space-between; padding:.6rem .75rem; background:var(--bg-elevated); border-radius:var(--radius-sm)"><span style="color:var(--text-primary); font-weight:500">11:00 — CityMall routine maintenance</span><span class="badge badge-green">Completed</span></div>
+                <div style="display:flex; justify-content:space-between; padding:.6rem .75rem; background:rgba(201,148,58,.06); border-radius:var(--radius-sm)"><span style="color:var(--text-primary); font-weight:500">14:00 — Heritage Properties modernization</span><span class="badge badge-gold">Upcoming</span></div>
+                <div style="display:flex; justify-content:space-between; padding:.6rem .75rem; background:var(--bg-elevated); border-radius:var(--radius-sm)"><span style="color:var(--text-primary); font-weight:500">16:00 — NordEx Logistics — 3 units</span><span class="badge badge-muted">Scheduled</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dash-panel" id="admin-clients">
+          <div class="dashboard-topbar"><div><div class="dashboard-title">All Clients</div><div class="dashboard-subtitle">512 active service agreements</div></div></div>
+          <div class="table-wrapper">
+            <table>
+              <thead><tr><th>Client Name</th><th>Contract</th><th>Units</th><th>Contract Value</th><th>Status</th><th>Renewal</th></tr></thead>
+              <tbody>
+                <tr><td style="font-weight:600; color:var(--text-primary)">Skyline Towers REIT</td><td style="font-family:var(--font-mono); font-size:.8rem; color:var(--gold)">#VX-2024-0087</td><td>4</td><td>$699/mo</td><td><span class="badge badge-green">Active</span></td><td>Dec 2026</td></tr>
+                <tr><td style="font-weight:600; color:var(--text-primary)">Metro Plaza Group</td><td style="font-family:var(--font-mono); font-size:.8rem; color:var(--gold)">#VX-2024-0064</td><td>12</td><td>Custom</td><td><span class="badge badge-green">Active</span></td><td>Mar 2027</td></tr>
+                <tr><td style="font-weight:600; color:var(--text-primary)">Pinnacle Hotels</td><td style="font-family:var(--font-mono); font-size:.8rem; color:var(--gold)">#VX-2023-0041</td><td>8</td><td>Custom</td><td><span class="badge badge-yellow">Renewal Due</span></td><td>Oct 2026</td></tr>
+                <tr><td style="font-weight:600; color:var(--text-primary)">Apex Hospitals</td><td style="font-family:var(--font-mono); font-size:.8rem; color:var(--gold)">#VX-2025-0102</td><td>20</td><td>Custom</td><td><span class="badge badge-green">Active</span></td><td>Jun 2027</td></tr>
+                <tr><td style="font-weight:600; color:var(--text-primary)">CityMall REIT</td><td style="font-family:var(--font-mono); font-size:.8rem; color:var(--gold)">#VX-2024-0078</td><td>35</td><td>Custom</td><td><span class="badge badge-green">Active</span></td><td>Feb 2027</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dash-panel" id="admin-tickets"><div class="dashboard-topbar"><div><div class="dashboard-title">All Service Tickets</div><div class="dashboard-subtitle">24 open across all clients</div></div></div><div style="color:var(--text-muted); font-size:.9rem; padding:2rem">Ticket management table — same structure as client tickets but across all 512 properties.</div></div>
+        <div class="dash-panel" id="admin-engineers"><div class="dashboard-topbar"><div><div class="dashboard-title">Engineer Management</div><div class="dashboard-subtitle">18 engineers on duty today</div></div></div><div style="color:var(--text-muted); font-size:.9rem; padding:2rem">Engineer dispatch and scheduling panel.</div></div>
+        <div class="dash-panel" id="admin-analytics"><div class="dashboard-topbar"><div><div class="dashboard-title">Analytics & Reports</div></div></div><div style="color:var(--text-muted); font-size:.9rem; padding:2rem">Advanced analytics dashboard with performance trends.</div></div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- ════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════ -->
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

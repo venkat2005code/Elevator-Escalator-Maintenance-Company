@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VertEx — Premium Elevator & Escalator Maintenance</title>
+  <meta name="description" content="VertEx offers world-class elevator and escalator installation, maintenance, modernization, and compliance services with a 99.7% uptime guarantee." />
+  <meta name="theme-color" content="#C9943A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+<header id="main-header">
+  <div class="container nav-inner">
+
+    <!-- Logo -->
+    <a class="nav-logo" href="index.html">
+      <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" />
+      <div class="nav-logo-text">
+        <span class="brand-name">VertEx</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <nav class="nav-links" aria-label="Main navigation">
+
+      <!-- Home Dropdown -->
+      <div class="nav-item" data-dropdown data-views="view-home1,view-home2">
+        <span class="nav-link" tabindex="0" id="nav-home">
+          Home
+          <svg class="caret" viewBox="0 0 16 16" fill="currentColor"><path d="M4 6l4 4 4-4"/></svg>
+        </span>
+        <div class="nav-dropdown" role="menu">
+          <a class="dropdown-item" href="index.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-building"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">Home 1</span>
+              <span class="dd-desc">Classic professional layout</span>
+            </span>
+          </a>
+          <a class="dropdown-item" href="home2.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-gear"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">Home 2</span>
+              <span class="dd-desc">Industrial dark split view</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="about.html" tabindex="0">About</a>
+      <a class="nav-link" href="services.html" tabindex="0">Services</a>
+      <a class="nav-link" href="compliance.html" tabindex="0">Compliance</a>
+      <a class="nav-link" href="pricing.html" tabindex="0">Pricing</a>
+      <a class="nav-link" href="contact.html" tabindex="0">Contact</a>
+
+      <!-- Dashboard Dropdown -->
+      <div class="nav-item" data-dropdown data-views="view-dashboard-user,view-dashboard-admin">
+        <span class="nav-link" tabindex="0">
+          Dashboard
+          <svg class="caret" viewBox="0 0 16 16" fill="currentColor"><path d="M4 6l4 4 4-4"/></svg>
+        </span>
+        <div class="nav-dropdown" role="menu">
+          <a class="dropdown-item" href="dashboard-user.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-user"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">User Dashboard</span>
+              <span class="dd-desc">Client portal & tickets</span>
+            </span>
+          </a>
+          <a class="dropdown-item" href="dashboard-admin.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-shield-check"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">Admin Dashboard</span>
+              <span class="dd-desc">Operations overview</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Right Controls -->
+    <div class="nav-controls">
+      <!-- RTL/LTR Toggle -->
+      <button class="dir-toggle" id="dir-toggle" aria-label="Toggle text direction" title="Toggle RTL/LTR">
+        <span class="dir-icon"><i class="ph ph-arrows-left-right"></i></span>
+        <span class="dir-label" id="dir-label">LTR</span>
+      </button>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+        <span class="icon-moon"><i class="ph ph-moon"></i></span>
+        <span class="icon-sun"><i class="ph ph-sun"></i></span>
+      </button>
+
+      <!-- Login CTA -->
+      <a class="nav-login-btn" href="login.html" style="cursor:pointer">Client Login</a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <div class="mobile-nav-link" data-submenu="mob-home-sub">
+    Home <span class="mobile-caret" style="transition:transform .3s">▾</span>
+  </div>
+  <div class="mobile-submenu" id="mob-home-sub">
+    <a class="mobile-sub-link" href="index.html"><i class="ph ph-building"></i> Home 1</a>
+    <a class="mobile-sub-link" href="home2.html"><i class="ph ph-gear"></i> Home 2</a>
+  </div>
+  <a class="mobile-nav-link" href="about.html">About</a>
+  <a class="mobile-nav-link" href="services.html">Services</a>
+  <a class="mobile-nav-link" href="compliance.html">Compliance</a>
+  <a class="mobile-nav-link" href="pricing.html">Pricing</a>
+  <a class="mobile-nav-link" href="contact.html">Contact</a>
+  <div class="mobile-nav-link" data-submenu="mob-dash-sub">
+    Dashboard <span class="mobile-caret" style="transition:transform .3s">▾</span>
+  </div>
+  <div class="mobile-submenu" id="mob-dash-sub">
+    <a class="mobile-sub-link" href="dashboard-user.html"><i class="ph ph-user"></i> User Dashboard</a>
+    <a class="mobile-sub-link" href="dashboard-admin.html"><i class="ph ph-shield-check"></i> Admin Dashboard</a>
+  </div>
+  <div class="mobile-controls">
+    <button class="dir-toggle" onclick="document.getElementById('dir-toggle').click()" style="font-size:.8rem"><i class="ph ph-arrows-left-right"></i> <span id="mob-dir-label">LTR</span></button>
+    <button class="theme-toggle" onclick="document.getElementById('theme-toggle').click()" style="position:relative">
+      <span class="icon-moon"><i class="ph ph-moon"></i></span><span class="icon-sun"><i class="ph ph-sun"></i></span>
+    </button>
+    <a class="btn btn-gold btn-sm" href="login.html">Client Login</a>
+  </div>
+</div>
+<main id="page-content">
+
+  <div class="pricing-hero section-sm">
+    <div class="container">
+      <div class="section-label" style="justify-content:center">Simple, Transparent Pricing</div>
+      <h1 class="font-display text-5xl font-bold" style="margin-bottom:1rem">Choose Your Maintenance Plan</h1>
+      <div class="gold-divider center"></div>
+      <p class="text-secondary" style="max-width:500px; margin:1.5rem auto 0; font-size:.95rem">No hidden fees. No surprises. Every plan includes full compliance support, 24/7 emergency access, and client portal access.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="pricing-grid">
+        <!-- Basic -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Basic</div>
+          <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">299</span><span class="pricing-period">/month</span></div>
+          <p class="pricing-desc">Ideal for single-unit residential buildings and small commercial properties.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature">1 Elevator or Escalator Unit</div>
+            <div class="pricing-feature">Quarterly Maintenance Visits</div>
+            <div class="pricing-feature">Annual Compliance Inspection</div>
+            <div class="pricing-feature">24/7 Emergency Callout</div>
+            <div class="pricing-feature">Client Portal Access</div>
+            <div class="pricing-feature unavailable">IoT Real-time Monitoring</div>
+            <div class="pricing-feature unavailable">Dedicated Account Manager</div>
+            <div class="pricing-feature unavailable">Priority Response SLA</div>
+          </div>
+          <a class="btn btn-outline w-full" style="justify-content:center" href="contact.html">Get Started</a>
+        </div>
+
+        <!-- Professional (Featured) -->
+        <div class="pricing-card featured">
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">699</span><span class="pricing-period">/month</span></div>
+          <p class="pricing-desc">For multi-unit commercial buildings requiring frequent maintenance and rapid response.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature">Up to 5 Units</div>
+            <div class="pricing-feature">Monthly Maintenance Visits</div>
+            <div class="pricing-feature">Bi-Annual Compliance Inspection</div>
+            <div class="pricing-feature">24/7 Emergency — 45-Min SLA</div>
+            <div class="pricing-feature">Client Portal + Ticket Tracking</div>
+            <div class="pricing-feature">IoT Real-time Monitoring</div>
+            <div class="pricing-feature">Dedicated Account Manager</div>
+            <div class="pricing-feature unavailable">Custom Modernization Roadmap</div>
+          </div>
+          <a class="btn btn-gold w-full" style="justify-content:center" href="contact.html">Get Started</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">Custom</span></div>
+          <p class="pricing-desc">Full-portfolio management for large estates, hospitals, airports, and high-rise complexes.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature">Unlimited Units</div>
+            <div class="pricing-feature">Weekly Monitoring Visits</div>
+            <div class="pricing-feature">Quarterly Compliance Audits</div>
+            <div class="pricing-feature">24/7 Priority Response — 30-Min SLA</div>
+            <div class="pricing-feature">Full Portal Suite + API Access</div>
+            <div class="pricing-feature">Advanced IoT Analytics Dashboard</div>
+            <div class="pricing-feature">Senior Dedicated Account Manager</div>
+            <div class="pricing-feature">Custom Modernization Roadmap</div>
+          </div>
+          <a class="btn btn-navy w-full" style="justify-content:center" href="contact.html">Talk to Sales</a>
+        </div>
+      </div>
+
+      <!-- FAQ style note -->
+      <div style="text-align:center; padding:2rem; color:var(--text-muted); font-size:.85rem">
+        All prices exclude VAT. Contracts available monthly or annually (10% annual discount). <a style="color:var(--gold); cursor:pointer" href="contact.html">Contact us</a> for multi-site discounts.
+      </div>
+    </div>
+  <!-- [SECTION 3] Maintenance ROI Calculator -->
+  <div class="section" style="background:var(--bg-primary); border-top:1px solid var(--border-subtle)">
+    <div class="container">
+      <div class="section-label" style="justify-content:center">Prove the Value</div>
+      <h2 class="font-display text-4xl font-bold text-center" style="margin-bottom:3rem">Maintenance ROI Calculator</h2>
+      
+      <div class="roi-calc-card">
+        <div class="roi-inputs">
+          <div class="roi-input-group">
+            <label class="roi-label" for="calc-units">Number of Elevator/Escalator Units</label>
+            <div class="roi-slider-container">
+              <input type="range" id="calc-units" min="1" max="50" value="5" class="roi-slider">
+              <span class="roi-val" id="val-units">5</span>
+            </div>
+          </div>
+          
+          <div class="roi-input-group">
+            <label class="roi-label" for="calc-cost">Avg. Cost of Downtime per Hour ($)</label>
+            <p class="text-secondary text-sm mb-4" style="margin-top:-.25rem">Consider lost retail sales, tenant dissatisfaction, or operational delays.</p>
+            <div class="roi-slider-container">
+              <input type="range" id="calc-cost" min="100" max="5000" step="50" value="500" class="roi-slider">
+              <span class="roi-val" id="val-cost">$500</span>
+            </div>
+          </div>
+          
+          <div class="roi-input-group">
+            <label class="roi-label" for="calc-downtime">Current Annual Downtime per Unit (Hours)</label>
+            <p class="text-secondary text-sm mb-4" style="margin-top:-.25rem">Industry average without predictive IoT is 24 hours.</p>
+            <div class="roi-slider-container">
+              <input type="range" id="calc-downtime" min="5" max="100" value="24" class="roi-slider">
+              <span class="roi-val" id="val-downtime">24</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="roi-output">
+          <div class="roi-output-label">Estimated Annual Savings</div>
+          <div class="roi-output-value" id="roi-savings">$0</div>
+          <p class="roi-output-desc">By reducing downtime by up to 78% with VertEx IoT Predictive Maintenance.</p>
+          <a class="btn btn-gold w-full" style="justify-content:center; margin-top:2rem" href="contact.html">Get a Custom Proposal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- [SECTION 3] Feature Deep Dive -->
+  <div class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div class="section-label" style="justify-content:center">Understanding Your Coverage</div>
+      <h2 class="font-display text-4xl font-bold text-center" style="margin-bottom:3rem">What's Included?</h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem">
+        <div class="card">
+          <h3 class="text-xl font-bold mb-2">24/7 IoT Monitoring</h3>
+          <p class="text-secondary">Sensors detect microscopic changes in vibration and temperature, transmitting data to our cloud. If an anomaly is detected, a tech is dispatched before a breakdown occurs.</p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-bold mb-2">Parts & Labor Coverage</h3>
+          <p class="text-secondary">Comprehensive plans completely cover the cost of all replacement parts (cables, relays, motors) and the labor required to install them, shielding you from unexpected capital expenses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- [SECTION 4] FAQ -->
+  <div class="section" style="background:var(--bg-primary)">
+    <div class="container">
+      <div class="section-label" style="justify-content:center">Common Questions</div>
+      <h2 class="font-display text-4xl font-bold text-center" style="margin-bottom:3rem">FAQ</h2>
+      <div style="display:flex; flex-direction:column; gap:1.5rem; max-width:800px; margin:0 auto">
+        <div style="border-bottom:1px solid var(--border-subtle); padding-bottom:1.5rem">
+          <h4 class="font-bold text-lg mb-2">Are contracts locking me in for years?</h4>
+          <p class="text-secondary">We offer flexible 1-year, 3-year, and 5-year contracts. Longer terms include discounted monthly rates and price-lock guarantees.</p>
+        </div>
+        <div style="border-bottom:1px solid var(--border-subtle); padding-bottom:1.5rem">
+          <h4 class="font-bold text-lg mb-2">What happens if a part is discontinued?</h4>
+          <p class="text-secondary">Our extensive reverse-engineering and modernization department can retrofit modern controllers to legacy systems without requiring a full shaft tear-out.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-2">Do you service equipment installed by other companies?</h4>
+          <p class="text-secondary">Yes. Our technicians are cross-trained on all major OEMs including Otis, Schindler, KONE, and ThyssenKrupp.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- [SECTION 5] ROI Calculator / Value -->
+  <div class="section" style="background:var(--bg-secondary)">
+    <div class="container text-center">
+      <div class="section-label" style="justify-content:center">The Value Proposition</div>
+      <h2 class="font-display text-4xl font-bold" style="margin-bottom:3rem">Why Preventative Maintenance Pays Off</h2>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:2rem">
+        <div class="card text-center">
+          <div class="text-4xl text-green-400 font-bold mb-2">-40%</div>
+          <p class="text-secondary">Reduction in major repair costs over 5 years.</p>
+        </div>
+        <div class="card text-center">
+          <div class="text-4xl text-green-400 font-bold mb-2">+15 Yrs</div>
+          <p class="text-secondary">Added to the lifespan of your mechanical systems.</p>
+        </div>
+        <div class="card text-center">
+          <div class="text-4xl text-green-400 font-bold mb-2">99.9%</div>
+          <p class="text-secondary">Tenant satisfaction via guaranteed uptime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- [SECTION 6] Custom Quote CTA -->
+  <div class="section" style="background:linear-gradient(135deg, rgba(13,17,23,.92) 0%, rgba(13,17,23,.75) 100%), url('assets/images/footer_cta_bg.jpg') center/cover; position:relative; border-top:1px solid var(--border-subtle); color:#fff;">
+    <div class="container text-center">
+      <div class="section-label" style="color:var(--gold); justify-content:center">Enterprise Portfolios</div>
+      <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.5rem">Need a Custom Portfolio Plan?</h2>
+      <p style="color:rgba(255,255,255,.7); max-width:600px; margin:0 auto 2rem">Managing multiple buildings? We offer volume discounts and unified billing for large real estate portfolios.</p>
+      <a class="btn btn-gold btn-lg" href="contact.html">Request Custom Quote</a>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-col-brand">
+          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem">
+            <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" style="width:48px; height:48px;"/>
+            <div class="footer-brand-name" style="margin:0">VertEx</div>
+          </div>
+          <p class="footer-brand-desc" style="margin-bottom:1.5rem">25 years of precision. One mission: keeping the world moving — safely upward.</p>
+                    <div class="footer-socials">
+            <a href="#" class="footer-social" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" class="footer-social" title="Twitter"><i class="ph ph-x-logo"></i></a>
+            <a href="#" class="footer-social" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="footer-social" title="Facebook"><i class="ph ph-facebook-logo"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="about.html">About Us</a>
+          <a class="footer-link" href="services.html">Services</a>
+          <a class="footer-link" href="compliance.html">Compliance</a>
+          <a class="footer-link" href="pricing.html">Pricing</a>
+          <a class="footer-link" href="contact.html">Contact</a>
+        </div>
+
+        <!-- Client Zone -->
+        <div>
+          <div class="footer-heading">Client Zone</div>
+          <a class="footer-link" href="login.html">Client Login</a>
+          <a class="footer-link" href="dashboard-user.html">My Dashboard</a>
+          <a class="footer-link" href="dashboard-admin.html">Admin Portal</a>
+          <a class="footer-link" href="dashboard-user.html">Service Tickets</a>
+        </div>
+
+        <!-- Contact Us -->
+        <div>
+          <div class="footer-heading">Contact Us</div>
+          <a class="footer-link" href="contact.html" style="display:flex; align-items:flex-start; gap:0.5rem">
+            <i class="ph ph-map-pin" style="margin-top:4px; color:var(--gold); font-size:1.1rem"></i>
+            <span>VertEx Tower, 12th Floor<br>Sheikh Zayed Road, Dubai</span>
+          </a>
+          <a class="footer-link" href="tel:+97140001234" style="display:flex; align-items:center; gap:0.5rem">
+            <i class="ph ph-phone" style="color:var(--gold); font-size:1.1rem"></i> +971 4 000 1234
+          </a>
+          <a class="footer-link" href="mailto:hello@vertexlift.com" style="display:flex; align-items:center; gap:0.5rem">
+            <i class="ph ph-envelope-simple" style="color:var(--gold); font-size:1.1rem"></i> hello@vertexlift.com
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 VertEx. All rights reserved.</span>
+        <div class="footer-legal" style="display:flex; gap:1.5rem; flex-wrap:wrap">
+          <a href="#" class="footer-link" style="padding:0">Privacy Policy</a>
+          <a href="#" class="footer-link" style="padding:0">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+<!-- ════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════ -->
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VertEx — Premium Elevator & Escalator Maintenance</title>
+  <meta name="description" content="VertEx offers world-class elevator and escalator installation, maintenance, modernization, and compliance services with a 99.7% uptime guarantee." />
+  <meta name="theme-color" content="#C9943A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+<header id="main-header">
+  <div class="container nav-inner">
+
+    <!-- Logo -->
+    <a class="nav-logo" href="index.html">
+      <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" />
+      <div class="nav-logo-text">
+        <span class="brand-name">VertEx</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <nav class="nav-links" aria-label="Main navigation">
+
+      <!-- Home Dropdown -->
+      <div class="nav-item" data-dropdown data-views="view-home1,view-home2">
+        <span class="nav-link" tabindex="0" id="nav-home">
+          Home
+          <svg class="caret" viewBox="0 0 16 16" fill="currentColor"><path d="M4 6l4 4 4-4"/></svg>
+        </span>
+        <div class="nav-dropdown" role="menu">
+          <a class="dropdown-item" href="index.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-building"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">Home 1</span>
+              <span class="dd-desc">Classic professional layout</span>
+            </span>
+          </a>
+          <a class="dropdown-item" href="home2.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-gear"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">Home 2</span>
+              <span class="dd-desc">Industrial dark split view</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="about.html" tabindex="0">About</a>
+      <a class="nav-link" href="services.html" tabindex="0">Services</a>
+      <a class="nav-link" href="compliance.html" tabindex="0">Compliance</a>
+      <a class="nav-link" href="pricing.html" tabindex="0">Pricing</a>
+      <a class="nav-link" href="contact.html" tabindex="0">Contact</a>
+
+      <!-- Dashboard Dropdown -->
+      <div class="nav-item" data-dropdown data-views="view-dashboard-user,view-dashboard-admin">
+        <span class="nav-link" tabindex="0">
+          Dashboard
+          <svg class="caret" viewBox="0 0 16 16" fill="currentColor"><path d="M4 6l4 4 4-4"/></svg>
+        </span>
+        <div class="nav-dropdown" role="menu">
+          <a class="dropdown-item" href="dashboard-user.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-user"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">User Dashboard</span>
+              <span class="dd-desc">Client portal & tickets</span>
+            </span>
+          </a>
+          <a class="dropdown-item" href="dashboard-admin.html" role="menuitem">
+            <span class="dd-icon"><i class="ph ph-shield-check"></i></span>
+            <span class="dd-text">
+              <span class="dd-label">Admin Dashboard</span>
+              <span class="dd-desc">Operations overview</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Right Controls -->
+    <div class="nav-controls">
+      <!-- RTL/LTR Toggle -->
+      <button class="dir-toggle" id="dir-toggle" aria-label="Toggle text direction" title="Toggle RTL/LTR">
+        <span class="dir-icon"><i class="ph ph-arrows-left-right"></i></span>
+        <span class="dir-label" id="dir-label">LTR</span>
+      </button>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+        <span class="icon-moon"><i class="ph ph-moon"></i></span>
+        <span class="icon-sun"><i class="ph ph-sun"></i></span>
+      </button>
+
+      <!-- Login CTA -->
+      <a class="nav-login-btn" href="login.html" style="cursor:pointer">Client Login</a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <div class="mobile-nav-link" data-submenu="mob-home-sub">
+    Home <span class="mobile-caret" style="transition:transform .3s">▾</span>
+  </div>
+  <div class="mobile-submenu" id="mob-home-sub">
+    <a class="mobile-sub-link" href="index.html"><i class="ph ph-building"></i> Home 1</a>
+    <a class="mobile-sub-link" href="home2.html"><i class="ph ph-gear"></i> Home 2</a>
+  </div>
+  <a class="mobile-nav-link" href="about.html">About</a>
+  <a class="mobile-nav-link" href="services.html">Services</a>
+  <a class="mobile-nav-link" href="compliance.html">Compliance</a>
+  <a class="mobile-nav-link" href="pricing.html">Pricing</a>
+  <a class="mobile-nav-link" href="contact.html">Contact</a>
+  <div class="mobile-nav-link" data-submenu="mob-dash-sub">
+    Dashboard <span class="mobile-caret" style="transition:transform .3s">▾</span>
+  </div>
+  <div class="mobile-submenu" id="mob-dash-sub">
+    <a class="mobile-sub-link" href="dashboard-user.html"><i class="ph ph-user"></i> User Dashboard</a>
+    <a class="mobile-sub-link" href="dashboard-admin.html"><i class="ph ph-shield-check"></i> Admin Dashboard</a>
+  </div>
+  <div class="mobile-controls">
+    <button class="dir-toggle" onclick="document.getElementById('dir-toggle').click()" style="font-size:.8rem"><i class="ph ph-arrows-left-right"></i> <span id="mob-dir-label">LTR</span></button>
+    <button class="theme-toggle" onclick="document.getElementById('theme-toggle').click()" style="position:relative">
+      <span class="icon-moon"><i class="ph ph-moon"></i></span><span class="icon-sun"><i class="ph ph-sun"></i></span>
+    </button>
+    <a class="btn btn-gold btn-sm" href="login.html">Client Login</a>
+  </div>
+</div>
+<main id="page-content">
+
+  <div class="about-hero section-sm">
+    <div class="container">
+      <div class="section-label" style="justify-content:center">Our Story</div>
+      <h1 class="font-display text-5xl font-bold" style="margin-bottom:1rem">About VertEx</h1>
+      <div class="gold-divider center"></div>
+      <p class="text-secondary" style="max-width:600px; margin:1.5rem auto 0; font-size:.95rem; line-height:1.7">We are precision engineers and trusted partners, dedicated to delivering safety, reliability, and innovation to every vertical journey.</p>
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--bg-primary)">
+    <div class="container">
+      <div class="about-grid" style="margin-top:3rem">
+        <div class="about-img-wrap">
+          <img src="assets/images/services.jpg" alt="VertEx engineer at work"/>
+          <div class="about-img-badge">
+            <div style="text-align:center">
+              <div style="font-family:var(--font-display); font-size:2rem; font-weight:700; color:var(--gold); line-height:1">25+</div>
+              <div style="font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--text-muted)">Years</div>
+            </div>
+            <div>
+              <div style="font-weight:700; font-size:.85rem; color:var(--text-primary)">Industry Leaders</div>
+              <div style="font-size:.75rem; color:var(--text-muted)">Since 2001</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-label">Who We Are</div>
+          <h2 class="about-headline">Precision Engineers, Trusted Partners</h2>
+          <p class="about-text">Founded in 2001, VertEx has grown from a five-person team to one of the region's most respected vertical transport specialists. We serve over 500 commercial buildings, hospitals, hotels, and public infrastructure projects.</p>
+          <p class="about-text">Our approach is simple: combine certified engineering talent with data-driven maintenance programs to achieve uptime levels the industry thought impossible.</p>
+          <div class="about-values">
+            <div class="about-value">
+              <div class="icon-circle"><i class="ph ph-target"></i></div>
+              <div>
+                <div class="about-value-title">Precision First</div>
+                <div class="about-value-desc">Every task executed to millimetre-level accuracy</div>
+              </div>
+            </div>
+            <div class="about-value">
+              <div class="icon-circle"><i class="ph ph-handshake"></i></div>
+              <div>
+                <div class="about-value-title">Client Partnership</div>
+                <div class="about-value-desc">Long-term relationships, not one-off transactions</div>
+              </div>
+            </div>
+            <div class="about-value">
+              <div class="icon-circle"><i class="ph ph-shield-check"></i></div>
+              <div>
+                <div class="about-value-title">Safety Absolute</div>
+                <div class="about-value-desc">Zero-compromise on safety, always</div>
+              </div>
+            </div>
+            <div class="about-value">
+              <div class="icon-circle"><i class="ph ph-recycle"></i>️</div>
+              <div>
+                <div class="about-value-title">Sustainability</div>
+                <div class="about-value-desc">Energy-efficient solutions reducing carbon footprint</div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap">
+            <a class="btn btn-gold" href="contact.html">Work With Us</a>
+            <a class="btn btn-outline" href="services.html">Our Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Company Timeline -->
+  <div class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem">
+        <div class="section-label" style="justify-content:center">Our Journey</div>
+        <h2 class="font-display text-4xl font-bold">25 Years of Milestones</h2>
+      </div>
+      <div style="max-width:600px; margin:0 auto">
+        <div class="company-timeline">
+          <div class="ct-item"><div class="ct-dot"></div><div class="ct-year">2001</div><div class="ct-title">Founded in Dubai</div><div class="ct-desc">Started with 5 engineers and a single maintenance contract.</div></div>
+          <div class="ct-item"><div class="ct-dot"></div><div class="ct-year">2007</div><div class="ct-title">ISO 9001 Certified</div><div class="ct-desc">Achieved international quality management certification.</div></div>
+          <div class="ct-item"><div class="ct-dot"></div><div class="ct-year">2012</div><div class="ct-title">100th Property Milestone</div><div class="ct-desc">Expanded operations to 3 cities across the region.</div></div>
+          <div class="ct-item"><div class="ct-dot"></div><div class="ct-year">2018</div><div class="ct-title">IoT Monitoring Platform</div><div class="ct-desc">Launched proprietary real-time fault detection system.</div></div>
+          <div class="ct-item"><div class="ct-dot"></div><div class="ct-year">2022</div><div class="ct-title">Client Portal Launch</div><div class="ct-desc">Digital-first service management for all 400+ clients.</div></div>
+          <div class="ct-item"><div class="ct-dot" style="border-color:var(--gold-light); box-shadow:0 0 12px rgba(201,148,58,.4)"></div><div class="ct-year">2026</div><div class="ct-title">500+ Properties & Counting</div><div class="ct-desc">Serving the region's most iconic buildings with a 99.7% uptime SLA.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- [SECTION 3] Core Values -->
+  <div class="section" style="background:var(--bg-primary)">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:4rem; flex-wrap:wrap">
+        <div style="flex:1; min-width:300px;">
+          <div class="section-label">What Drives Us</div>
+          <h2 class="font-display text-4xl font-bold" style="margin-bottom:2rem">Our Core Values</h2>
+          
+          <div style="display:flex; flex-direction:column; gap:2rem;">
+            <div>
+              <h3 class="text-xl font-bold mb-2" style="display:flex; align-items:center; gap:0.5rem"><i class="ph ph-shield-check text-gold"></i> Uncompromising Safety</h3>
+              <p class="text-secondary">Safety isn't just a metric; it's our foundational principle. Every procedure is designed to protect passengers and technicians alike.</p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2" style="display:flex; align-items:center; gap:0.5rem"><i class="ph ph-cpu text-gold"></i> Continuous Innovation</h3>
+              <p class="text-secondary">We leverage the latest in IoT and AI predictive diagnostics to redefine what reliability means in vertical transportation.</p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2" style="display:flex; align-items:center; gap:0.5rem"><i class="ph ph-handshake text-gold"></i> Transparent Integrity</h3>
+              <p class="text-secondary">No hidden fees, no unnecessary replacements. We build long-term partnerships based on radical honesty and mutual trust.</p>
+            </div>
+          </div>
+        </div>
+        <div style="flex:1; min-width:300px;">
+          <img src="assets/images/core_values.jpg" alt="Engineering Team" style="width:100%; border-radius:var(--radius-lg); box-shadow:0 20px 40px rgba(0,0,0,0.2)"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- [SECTION 4] Leadership Team -->
+  <div class="section" style="background:var(--bg-secondary)">
+    <div class="container text-center">
+      <div class="section-label" style="justify-content:center">Leadership</div>
+      <h2 class="font-display text-4xl font-bold" style="margin-bottom:3rem">Meet The Experts</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:2rem">
+        <div class="card text-center">
+          <div style="width:120px; height:120px; border-radius:50%; margin:0 auto 1.5rem; overflow:hidden; border:2px solid var(--gold); box-shadow:0 10px 20px rgba(0,0,0,0.2)">
+            <img src="assets/images/expert_david_1789528810371.jpg" alt="David Chen" style="width:100%; height:100%; object-fit:cover" />
+          </div>
+          <h3 class="text-xl font-bold">David Chen</h3>
+          <p class="text-gold text-sm font-bold tracking-widest uppercase mb-4">Chief Engineer</p>
+          <p class="text-secondary text-sm">20+ years specializing in high-speed traction modernization.</p>
+        </div>
+        <div class="card text-center">
+          <div style="width:120px; height:120px; border-radius:50%; margin:0 auto 1.5rem; overflow:hidden; border:2px solid var(--gold); box-shadow:0 10px 20px rgba(0,0,0,0.2)">
+            <img src="assets/images/expert_sarah_1789528836573.jpg" alt="Sarah Jenkins" style="width:100%; height:100%; object-fit:cover" />
+          </div>
+          <h3 class="text-xl font-bold">Sarah Jenkins</h3>
+          <p class="text-gold text-sm font-bold tracking-widest uppercase mb-4">VP of Operations</p>
+          <p class="text-secondary text-sm">Pioneered our 99.9% uptime guarantee and predictive dispatch systems.</p>
+        </div>
+        <div class="card text-center">
+          <div style="width:120px; height:120px; border-radius:50%; margin:0 auto 1.5rem; overflow:hidden; border:2px solid var(--gold); box-shadow:0 10px 20px rgba(0,0,0,0.2)">
+            <img src="assets/images/expert_marcus_1789528864660.jpg" alt="Marcus Thorne" style="width:100%; height:100%; object-fit:cover" />
+          </div>
+          <h3 class="text-xl font-bold">Marcus Thorne</h3>
+          <p class="text-gold text-sm font-bold tracking-widest uppercase mb-4">Head of Safety</p>
+          <p class="text-secondary text-sm">Former state elevator inspector ensuring strict compliance with ASME A17.1.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- [SECTION 5] Global Footprint -->
+  <div class="section" style="background:var(--bg-primary)">
+    <div class="container text-center">
+      <div class="section-label" style="justify-content:center">Our Reach</div>
+      <h2 class="font-display text-4xl font-bold" style="margin-bottom:3rem">Global Footprint</h2>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:2rem; margin-bottom:3rem">
+        <div>
+          <div class="text-5xl font-display text-gold mb-2">12+</div>
+          <div class="text-secondary uppercase tracking-widest text-sm">Countries Served</div>
+        </div>
+        <div>
+          <div class="text-5xl font-display text-gold mb-2">4,500</div>
+          <div class="text-secondary uppercase tracking-widest text-sm">Units Maintained</div>
+        </div>
+        <div>
+          <div class="text-5xl font-display text-gold mb-2">300+</div>
+          <div class="text-secondary uppercase tracking-widest text-sm">Certified Techs</div>
+        </div>
+      </div>
+      <div style="max-width:900px; margin:0 auto; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border-subtle); display:flex; align-items:center; justify-content:center; box-shadow:0 20px 40px rgba(0,0,0,0.2)">
+        <img src="assets/images/global_footprint.jpg" alt="VertEx Global Connectivity Map" style="width:100%; display:block" />
+      </div>
+    </div>
+  </div>
+
+  <!-- [SECTION 6] Careers -->
+  <div class="section" style="background:linear-gradient(135deg, rgba(13,17,23,.92) 0%, rgba(13,17,23,.75) 100%), url('assets/images/footer_cta_bg.jpg') center/cover; position:relative; border-top:1px solid var(--border-subtle); color:#fff;">
+    <div class="container text-center">
+      <div class="section-label" style="color:var(--gold); justify-content:center">Join Us</div>
+      <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.5rem">Elevate Your Career</h2>
+      <p style="color:rgba(255,255,255,.7); max-width:600px; margin:0 auto 2rem">We are always looking for passionate engineers, certified technicians, and innovative minds to join our rapidly growing team.</p>
+      <a class="btn btn-gold btn-lg" href="contact.html">View Open Positions</a>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-col-brand">
+          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem">
+            <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" style="width:48px; height:48px;"/>
+            <div class="footer-brand-name" style="margin:0">VertEx</div>
+          </div>
+          <p class="footer-brand-desc" style="margin-bottom:1.5rem">25 years of precision. One mission: keeping the world moving — safely upward.</p>
+                    <div class="footer-socials">
+            <a href="#" class="footer-social" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" class="footer-social" title="Twitter"><i class="ph ph-x-logo"></i></a>
+            <a href="#" class="footer-social" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="footer-social" title="Facebook"><i class="ph ph-facebook-logo"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <a class="footer-link" href="index.html">Home</a>
+          <a class="footer-link" href="about.html">About Us</a>
+          <a class="footer-link" href="services.html">Services</a>
+          <a class="footer-link" href="compliance.html">Compliance</a>
+          <a class="footer-link" href="pricing.html">Pricing</a>
+          <a class="footer-link" href="contact.html">Contact</a>
+        </div>
+
+        <!-- Client Zone -->
+        <div>
+          <div class="footer-heading">Client Zone</div>
+          <a class="footer-link" href="login.html">Client Login</a>
+          <a class="footer-link" href="dashboard-user.html">My Dashboard</a>
+          <a class="footer-link" href="dashboard-admin.html">Admin Portal</a>
+          <a class="footer-link" href="dashboard-user.html">Service Tickets</a>
+        </div>
+
+        <!-- Contact Us -->
+        <div>
+          <div class="footer-heading">Contact Us</div>
+          <a class="footer-link" href="contact.html" style="display:flex; align-items:flex-start; gap:0.5rem">
+            <i class="ph ph-map-pin" style="margin-top:4px; color:var(--gold); font-size:1.1rem"></i>
+            <span>VertEx Tower, 12th Floor<br>Sheikh Zayed Road, Dubai</span>
+          </a>
+          <a class="footer-link" href="tel:+97140001234" style="display:flex; align-items:center; gap:0.5rem">
+            <i class="ph ph-phone" style="color:var(--gold); font-size:1.1rem"></i> +971 4 000 1234
+          </a>
+          <a class="footer-link" href="mailto:hello@vertexlift.com" style="display:flex; align-items:center; gap:0.5rem">
+            <i class="ph ph-envelope-simple" style="color:var(--gold); font-size:1.1rem"></i> hello@vertexlift.com
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 VertEx. All rights reserved.</span>
+        <div class="footer-legal" style="display:flex; gap:1.5rem; flex-wrap:wrap">
+          <a href="#" class="footer-link" style="padding:0">Privacy Policy</a>
+          <a href="#" class="footer-link" style="padding:0">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+<!-- ════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════ -->
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

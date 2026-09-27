@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VertEx — Premium Elevator & Escalator Maintenance</title>
+  <meta name="description" content="VertEx offers world-class elevator and escalator installation, maintenance, modernization, and compliance services with a 99.7% uptime guarantee." />
+  <meta name="theme-color" content="#C9943A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>#page-content { margin-top: 0 !important; }</style>
+</head>
+<body>
+<main id="page-content">
+
+  <div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dash-sidebar-user" data-context="user">
+      <div class="sidebar-header">
+        <a class="nav-logo" href="index.html">
+          <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" />
+          <div class="nav-logo-text" style="display:flex; flex-direction:column">
+            <span class="brand-name">VertEx</span>
+          </div>
+        </a>
+      </div>
+      <nav class="sidebar-nav dash-context" data-context="user">
+        <div class="sidebar-section-label">Overview</div>
+        <div class="sidebar-link active" data-dash-panel="dpanel-overview">
+          <div class="s-icon"><i class="ph ph-chart-bar"></i></div><span class="s-label">Overview</span>
+        </div>
+        <div class="sidebar-section-label" style="margin-top:.75rem">Services</div>
+        <div class="sidebar-link" data-dash-panel="dpanel-schedule">
+          <div class="s-icon"><i class="ph ph-calendar-blank"></i></div><span class="s-label">Maintenance Schedule</span>
+        </div>
+        <div class="sidebar-link" data-dash-panel="dpanel-tickets">
+          <div class="s-icon"><i class="ph ph-ticket"></i></div><span class="s-label">Service Tickets</span>
+          <span class="sidebar-badge">3</span>
+        </div>
+        <div class="sidebar-link" data-dash-panel="dpanel-certs">
+          <div class="s-icon"><i class="ph ph-certificate"></i></div><span class="s-label">Certificates</span>
+        </div>
+        <div class="sidebar-link" data-dash-panel="dpanel-history">
+          <div class="s-icon"><i class="ph ph-book-open"></i></div><span class="s-label">Breakdown History</span>
+        </div>
+        <div class="sidebar-link" data-dash-panel="dpanel-contracts">
+          <div class="s-icon"><i class="ph ph-clipboard-text"></i></div><span class="s-label">Contracts & Renewals</span>
+        </div>
+        <div class="sidebar-section-label" style="margin-top:.75rem">Account</div>
+        <a href="index.html" class="sidebar-link" style="text-decoration:none; color:inherit">
+          <div class="s-icon"><i class="ph ph-arrow-left"></i></div><span class="s-label">Back to Website</span>
+        </a>
+        <a href="login.html" class="sidebar-link" style="text-decoration:none; color:inherit">
+          <div class="s-icon"><i class="ph ph-door"></i></div><span class="s-label" style="color:var(--danger, #EF4444)">Sign Out</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <div class="dashboard-main">
+
+      <!-- Dashboard Header -->
+      <header class="dashboard-header">
+        <div class="dashboard-header-left">
+
+          <div class="dashboard-breadcrumbs">
+            <span>Client Portal</span>
+            <i class="ph ph-caret-right" style="font-size:0.7rem"></i>
+            <span class="active" id="breadcrumb-active">Overview</span>
+          </div>
+        </div>
+        <div class="dashboard-header-right">
+          <div class="dashboard-search">
+            <i class="ph ph-magnifying-glass"></i>
+            <input type="text" placeholder="Search portal..." />
+          </div>
+          <button class="dashboard-tool-btn dir-toggle" id="dir-toggle">
+            <span id="dir-label" style="font-size:0.7rem; font-weight:700">LTR</span>
+          </button>
+          <button class="dashboard-tool-btn theme-toggle" id="theme-toggle">
+            <i class="ph ph-moon"></i>
+          </button>
+          <div class="header-user-profile">
+            <div class="header-avatar">RK</div>
+            <div class="header-user-info">
+              <span class="header-user-name">Rajiv Kumar</span>
+              <span class="header-user-role">Client</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="dashboard-content">
+
+        <!-- ── OVERVIEW PANEL ── -->
+        <div class="dash-panel active" id="dpanel-overview">
+          <div class="dashboard-topbar">
+            <div>
+              <div class="dashboard-title">Good morning, Rajiv <i class="ph ph-hand-waving"></i></div>
+              <div class="dashboard-subtitle">Skyline Towers — Contract #VX-2024-0087 · Active</div>
+            </div>
+            <div class="dashboard-actions">
+              <span class="btn btn-outline btn-sm" data-dash-panel="dpanel-tickets" onclick="document.querySelector('[data-dash-panel=dpanel-tickets]').click()">Open Tickets</span>
+              <a class="btn btn-gold btn-sm" href="contact.html"><i class="ph ph-bell"></i> Request Service</a>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-card-label">System Uptime</span>
+              <span class="stat-card-value gold">99.7%</span>
+              <span class="stat-card-change up">↑ +0.2% this month</span>
+              <span class="stat-card-icon"><i class="ph ph-lightning"></i></span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card-label">Active Tickets</span>
+              <span class="stat-card-value">3</span>
+              <span class="stat-card-change neutral">2 in progress · 1 pending</span>
+              <span class="stat-card-icon"><i class="ph ph-ticket"></i></span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card-label">Next Visit</span>
+              <span class="stat-card-value" style="font-size:1.6rem">Sep 22</span>
+              <span class="stat-card-change neutral">Routine maintenance · 10:00 AM</span>
+              <span class="stat-card-icon"><i class="ph ph-calendar-blank"></i></span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card-label">Contract Expires</span>
+              <span class="stat-card-value" style="font-size:1.6rem">87 days</span>
+              <span class="stat-card-change neutral">Renewal due Dec 12, 2026</span>
+              <span class="stat-card-icon"><i class="ph ph-clipboard-text"></i></span>
+            </div>
+          </div>
+
+          <!-- Uptime Chart -->
+          <div class="chart-box">
+            <div class="chart-header">
+              <div><div class="chart-title">Monthly Uptime Performance</div><div class="chart-subtitle">Last 6 months · Skyline Towers Units A, B & C</div></div>
+              <span class="badge badge-green"><span class="dot dot-green"></span>Live</span>
+            </div>
+            <div id="uptime-chart"></div>
+          </div>
+
+          <!-- Recent Activity -->
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem">
+            <div class="chart-box">
+              <div class="chart-header"><div class="chart-title">Recent Activity</div></div>
+              <div style="display:flex; flex-direction:column; gap:.75rem">
+                <div style="display:flex; gap:.75rem; align-items:flex-start; padding:.75rem; background:var(--bg-elevated); border-radius:var(--radius-md)">
+                  <span style="font-size:1.2rem"><i class="ph ph-check-circle" style="color:#22C55E"></i></span>
+                  <div><div style="font-weight:600; font-size:.85rem; color:var(--text-primary)">Routine maintenance completed</div><div style="font-size:.75rem; color:var(--text-muted)">Unit A — Sep 10, 2026</div></div>
+                </div>
+                <div style="display:flex; gap:.75rem; align-items:flex-start; padding:.75rem; background:var(--bg-elevated); border-radius:var(--radius-md)">
+                  <span style="font-size:1.2rem"><i class="ph ph-clipboard"></i></span>
+                  <div><div style="font-weight:600; font-size:.85rem; color:var(--text-primary)">Annual inspection certificate issued</div><div style="font-size:.75rem; color:var(--text-muted)">All units — Sep 5, 2026</div></div>
+                </div>
+                <div style="display:flex; gap:.75rem; align-items:flex-start; padding:.75rem; background:rgba(239,68,68,.06); border:1px solid rgba(239,68,68,.15); border-radius:var(--radius-md)">
+                  <span style="font-size:1.2rem"><i class="ph ph-circle-fill" style="color:var(--text-muted)"></i></span>
+                  <div><div style="font-weight:600; font-size:.85rem; color:var(--text-primary)">Emergency callout — door sensor fault</div><div style="font-size:.75rem; color:var(--text-muted)">Unit B — Aug 22, 2026 · Resolved in 38 min</div></div>
+                </div>
+                <div style="display:flex; gap:.75rem; align-items:flex-start; padding:.75rem; background:var(--bg-elevated); border-radius:var(--radius-md)">
+                  <span style="font-size:1.2rem"><i class="ph ph-wrench"></i></span>
+                  <div><div style="font-weight:600; font-size:.85rem; color:var(--text-primary)">Drive belt replacement — scheduled</div><div style="font-size:.75rem; color:var(--text-muted)">Unit C — Sep 22, 2026 · Upcoming</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="chart-box">
+              <div class="chart-header"><div class="chart-title">Unit Status</div></div>
+              <div style="display:flex; flex-direction:column; gap:.75rem">
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:.75rem; background:var(--bg-elevated); border-radius:var(--radius-md)">
+                  <div style="display:flex; align-items:center; gap:.75rem"><span class="dot dot-green"></span><span style="font-weight:600; font-size:.875rem; color:var(--text-primary)">Elevator — Unit A</span></div>
+                  <span class="badge badge-green">Operational</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:.75rem; background:var(--bg-elevated); border-radius:var(--radius-md)">
+                  <div style="display:flex; align-items:center; gap:.75rem"><span class="dot dot-yellow"></span><span style="font-weight:600; font-size:.875rem; color:var(--text-primary)">Elevator — Unit B</span></div>
+                  <span class="badge badge-yellow">Maintenance Scheduled</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:.75rem; background:var(--bg-elevated); border-radius:var(--radius-md)">
+                  <div style="display:flex; align-items:center; gap:.75rem"><span class="dot dot-green"></span><span style="font-weight:600; font-size:.875rem; color:var(--text-primary)">Escalator — Unit C</span></div>
+                  <span class="badge badge-green">Operational</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:.75rem; background:var(--bg-elevated); border-radius:var(--radius-md)">
+                  <div style="display:flex; align-items:center; gap:.75rem"><span class="dot dot-blue"></span><span style="font-weight:600; font-size:.875rem; color:var(--text-primary)">Service Lift — Unit D</span></div>
+                  <span class="badge badge-blue">Inspection Pending</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SCHEDULE PANEL ── -->
+        <div class="dash-panel" id="dpanel-schedule">
+          <div class="dashboard-topbar">
+            <div><div class="dashboard-title">Maintenance Schedule</div><div class="dashboard-subtitle">Upcoming visits, inspections & planned works</div></div>
+            <a class="btn btn-gold btn-sm" href="contact.html">+ Request Visit</a>
+          </div>
+          <!-- Calendar -->
+          <div class="schedule-calendar">
+            <div class="schedule-header">
+              <div class="month-nav">
+                <button class="month-nav-btn" id="cal-prev">‹</button>
+                <div class="month-label" id="cal-month-label">September 2026</div>
+                <button class="month-nav-btn" id="cal-next">›</button>
+              </div>
+              <div style="display:flex;gap:.5rem">
+                <span class="badge badge-gold"><i class="ph ph-wrench"></i> Maintenance</span>
+                <span class="badge badge-blue"><i class="ph ph-magnifying-glass"></i> Inspection</span>
+                <span class="badge badge-red"><i class="ph ph-warning"></i> Emergency</span>
+              </div>
+            </div>
+            <div class="calendar-grid" style="background:var(--border-subtle)">
+              <div class="cal-day-header">Sun</div><div class="cal-day-header">Mon</div><div class="cal-day-header">Tue</div><div class="cal-day-header">Wed</div><div class="cal-day-header">Thu</div><div class="cal-day-header">Fri</div><div class="cal-day-header">Sat</div>
+              <div id="calendar-grid" style="display:contents"></div>
+            </div>
+          </div>
+          <!-- Upcoming visits list -->
+          <h3 style="font-family:var(--font-display); font-weight:700; color:var(--text-primary); margin-bottom:1.5rem">Upcoming Visits</h3>
+          <div class="visit-list">
+            <div class="visit-item">
+              <div class="visit-date-block"><div class="visit-date-day">22</div><div class="visit-date-month">Sep</div></div>
+              <div class="visit-info"><div class="visit-title">Routine Maintenance — Unit B & C</div><div class="visit-meta"><span><i class="ph ph-clock"></i> 10:00–13:00</span><span><i class="ph ph-hard-hat"></i> Eng. Hassan Al-Rashid</span><span><i class="ph ph-map-pin"></i> All floors</span></div></div>
+              <div class="visit-actions"><span class="badge badge-gold">Scheduled</span></div>
+            </div>
+            <div class="visit-item">
+              <div class="visit-date-block"><div class="visit-date-day">28</div><div class="visit-date-month">Sep</div></div>
+              <div class="visit-info"><div class="visit-title">Annual Compliance Audit — All Units</div><div class="visit-meta"><span><i class="ph ph-clock"></i> 09:00–17:00</span><span><i class="ph ph-hard-hat"></i> Inspection Team</span><span><i class="ph ph-map-pin"></i> Full building</span></div></div>
+              <div class="visit-actions"><span class="badge badge-blue">Inspection</span></div>
+            </div>
+            <div class="visit-item">
+              <div class="visit-date-block"><div class="visit-date-day">05</div><div class="visit-date-month">Oct</div></div>
+              <div class="visit-info"><div class="visit-title">Drive Belt Replacement — Unit C</div><div class="visit-meta"><span><i class="ph ph-clock"></i> 08:00–12:00</span><span><i class="ph ph-hard-hat"></i> Eng. Priya Nair</span><span><i class="ph ph-map-pin"></i> Floors 1–10 offline during work</span></div></div>
+              <div class="visit-actions"><span class="badge badge-yellow">Parts Ordered</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── TICKETS PANEL ── -->
+        <div class="dash-panel" id="dpanel-tickets">
+          <div class="dashboard-topbar">
+            <div><div class="dashboard-title">Service Tickets</div><div class="dashboard-subtitle">Track all open and historical service requests</div></div>
+            <a class="btn btn-gold btn-sm" href="contact.html">+ New Ticket</a>
+          </div>
+          <div class="ticket-filters">
+            <button class="filter-btn active" data-filter="all">All (12)</button>
+            <button class="filter-btn" data-filter="open">Open (3)</button>
+            <button class="filter-btn" data-filter="inprogress">In Progress (2)</button>
+            <button class="filter-btn" data-filter="resolved">Resolved (7)</button>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead><tr><th>Ticket ID</th><th>Description</th><th>Unit</th><th>Priority</th><th>Status</th><th>Created</th><th>Assigned To</th></tr></thead>
+              <tbody>
+                <tr class="ticket-row" data-status="open"><td style="color:var(--gold); font-family:var(--font-mono)">#VX-2026-0312</td><td style="color:var(--text-primary); font-weight:500">Door sensor intermittent fault</td><td>Unit B</td><td><span class="badge badge-red">High</span></td><td><span class="badge badge-yellow">Open</span></td><td>Sep 14</td><td>Unassigned</td></tr>
+                <tr class="ticket-row" data-status="inprogress"><td style="color:var(--gold); font-family:var(--font-mono)">#VX-2026-0298</td><td style="color:var(--text-primary); font-weight:500">Unusual vibration — drive motor</td><td>Unit A</td><td><span class="badge badge-yellow">Medium</span></td><td><span class="badge badge-blue">In Progress</span></td><td>Sep 10</td><td>Eng. Hassan</td></tr>
+                <tr class="ticket-row" data-status="open"><td style="color:var(--gold); font-family:var(--font-mono)">#VX-2026-0291</td><td style="color:var(--text-primary); font-weight:500">Lighting replacement — cab interior</td><td>Unit D</td><td><span class="badge badge-muted">Low</span></td><td><span class="badge badge-yellow">Open</span></td><td>Sep 8</td><td>Unassigned</td></tr>
+                <tr class="ticket-row" data-status="inprogress"><td style="color:var(--gold); font-family:var(--font-mono)">#VX-2026-0278</td><td style="color:var(--text-primary); font-weight:500">Annual inspection documentation</td><td>All</td><td><span class="badge badge-blue">Planned</span></td><td><span class="badge badge-blue">In Progress</span></td><td>Sep 5</td><td>Inspection Team</td></tr>
+                <tr class="ticket-row" data-status="resolved"><td style="color:var(--gold); font-family:var(--font-mono)">#VX-2026-0244</td><td style="color:var(--text-primary); font-weight:500">Emergency call — overheating motor</td><td>Unit B</td><td><span class="badge badge-red">Emergency</span></td><td><span class="badge badge-green">Resolved</span></td><td>Aug 22</td><td>Eng. Priya</td></tr>
+                <tr class="ticket-row" data-status="resolved"><td style="color:var(--gold); font-family:var(--font-mono)">#VX-2026-0231</td><td style="color:var(--text-primary); font-weight:500">Routine lubrication — all units</td><td>All</td><td><span class="badge badge-muted">Low</span></td><td><span class="badge badge-green">Resolved</span></td><td>Aug 15</td><td>Eng. Hassan</td></tr>
+                <tr class="ticket-row" data-status="resolved"><td style="color:var(--gold); font-family:var(--font-mono)">#VX-2026-0210</td><td style="color:var(--text-primary); font-weight:500">Control panel firmware update</td><td>Unit A</td><td><span class="badge badge-blue">Planned</span></td><td><span class="badge badge-green">Resolved</span></td><td>Aug 3</td><td>Eng. Priya</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ── CERTIFICATES PANEL ── -->
+        <div class="dash-panel" id="dpanel-certs">
+          <div class="dashboard-topbar">
+            <div><div class="dashboard-title">Compliance Certificates</div><div class="dashboard-subtitle">All regulatory certificates for Skyline Towers</div></div>
+            <span class="btn btn-outline btn-sm"><i class="ph ph-arrow-down"></i> Export All</span>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-header"><div class="cert-icon"><i class="ph ph-medal"></i></div><span class="badge badge-green">Valid</span></div>
+              <div class="cert-name">Annual Safety Inspection Certificate</div>
+              <div class="cert-issuer">Issued by: UAE Ministry of Infrastructure</div>
+              <div class="cert-details">
+                <div><div class="cert-detail-label">Issue Date</div><div class="cert-detail-value">Sep 5, 2026</div></div>
+                <div><div class="cert-detail-label">Expiry Date</div><div class="cert-detail-value">Sep 4, 2027</div></div>
+                <div><div class="cert-detail-label">Certificate No.</div><div class="cert-detail-value" style="font-family:var(--font-mono); font-size:.75rem">UAE-SKY-2026-081</div></div>
+                <div><div class="cert-detail-label">Units Covered</div><div class="cert-detail-value">A, B, C, D</div></div>
+              </div>
+              <span class="btn btn-outline btn-sm w-full" style="justify-content:center; margin-top:1rem"><i class="ph ph-arrow-down"></i> Download PDF</span>
+            </div>
+            <div class="cert-card">
+              <div class="cert-header"><div class="cert-icon"><i class="ph ph-ruler"></i></div><span class="badge badge-green">Valid</span></div>
+              <div class="cert-name">EN 81 Compliance Certificate</div>
+              <div class="cert-issuer">Issued by: VertEx Inspection Division</div>
+              <div class="cert-details">
+                <div><div class="cert-detail-label">Issue Date</div><div class="cert-detail-value">Mar 12, 2026</div></div>
+                <div><div class="cert-detail-label">Expiry Date</div><div class="cert-detail-value">Mar 11, 2027</div></div>
+                <div><div class="cert-detail-label">Certificate No.</div><div class="cert-detail-value" style="font-family:var(--font-mono); font-size:.75rem">EN81-SKY-2026-022</div></div>
+                <div><div class="cert-detail-label">Standard</div><div class="cert-detail-value">EN 81-20:2014</div></div>
+              </div>
+              <span class="btn btn-outline btn-sm w-full" style="justify-content:center; margin-top:1rem"><i class="ph ph-arrow-down"></i> Download PDF</span>
+            </div>
+            <div class="cert-card expiring-soon">
+              <div class="cert-header"><div class="cert-icon"><i class="ph ph-lightning"></i></div><span class="badge badge-yellow">Expiring Soon</span></div>
+              <div class="cert-name">Electrical Safety Certificate</div>
+              <div class="cert-issuer">Issued by: DEWA Certified Inspector</div>
+              <div class="cert-details">
+                <div><div class="cert-detail-label">Issue Date</div><div class="cert-detail-value">Oct 5, 2025</div></div>
+                <div><div class="cert-detail-label">Expiry Date</div><div class="cert-detail-value" style="color:#FACC15">Oct 4, 2026</div></div>
+                <div><div class="cert-detail-label">Certificate No.</div><div class="cert-detail-value" style="font-family:var(--font-mono); font-size:.75rem">ELEC-SKY-2025-044</div></div>
+                <div><div class="cert-detail-label">Days Remaining</div><div class="cert-detail-value" style="color:#FACC15; font-weight:700">19 days</div></div>
+              </div>
+              <a class="btn btn-gold btn-sm w-full" style="justify-content:center; margin-top:1rem" href="contact.html"><i class="ph ph-bell"></i> Request Renewal</a>
+            </div>
+            <div class="cert-card">
+              <div class="cert-header"><div class="cert-icon"><i class="ph ph-wheelchair"></i></div><span class="badge badge-green">Valid</span></div>
+              <div class="cert-name">Accessibility Compliance (ADA/BS 8300)</div>
+              <div class="cert-issuer">Issued by: VertEx Inspection Division</div>
+              <div class="cert-details">
+                <div><div class="cert-detail-label">Issue Date</div><div class="cert-detail-value">Jan 20, 2026</div></div>
+                <div><div class="cert-detail-label">Expiry Date</div><div class="cert-detail-value">Jan 19, 2028</div></div>
+                <div><div class="cert-detail-label">Certificate No.</div><div class="cert-detail-value" style="font-family:var(--font-mono); font-size:.75rem">ADA-SKY-2026-008</div></div>
+                <div><div class="cert-detail-label">Units Covered</div><div class="cert-detail-value">A, B, C</div></div>
+              </div>
+              <span class="btn btn-outline btn-sm w-full" style="justify-content:center; margin-top:1rem"><i class="ph ph-arrow-down"></i> Download PDF</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── BREAKDOWN HISTORY PANEL ── -->
+        <div class="dash-panel" id="dpanel-history">
+          <div class="dashboard-topbar">
+            <div><div class="dashboard-title">Breakdown Call History</div><div class="dashboard-subtitle">All emergency callouts and incident records</div></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot emergency"></div>
+              <div class="timeline-card">
+                <div class="timeline-date"><i class="ph ph-calendar-blank"></i> Aug 22, 2026 · 02:14 AM</div>
+                <div class="timeline-title"><i class="ph ph-warning"></i> Emergency Callout — Overheating Motor</div>
+                <p class="timeline-desc">Unit B motor temperature exceeded safe threshold. Automatic shutdown triggered. On-site engineer arrived in 38 minutes. Motor cooling system serviced and temperature sensor calibrated.</p>
+                <div class="timeline-meta"><span class="badge badge-red">Emergency</span><span class="badge badge-green">Resolved · 38 min</span><span class="badge badge-muted">Eng. Priya Nair</span></div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot resolved"></div>
+              <div class="timeline-card">
+                <div class="timeline-date"><i class="ph ph-calendar-blank"></i> Jun 10, 2026 · 11:30 AM</div>
+                <div class="timeline-title"><i class="ph ph-warning" style="color:#FACC15"></i>️ Door Sensor Misalignment — Unit A</div>
+                <p class="timeline-desc">Door closing sensor reported intermittent fault causing delayed closures. Engineer realigned sensor bracket and ran full door cycle test. No recurrence reported.</p>
+                <div class="timeline-meta"><span class="badge badge-yellow">Non-Emergency</span><span class="badge badge-green">Resolved · 2.5 hrs</span><span class="badge badge-muted">Eng. Hassan Al-Rashid</span></div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot resolved"></div>
+              <div class="timeline-card">
+                <div class="timeline-date"><i class="ph ph-calendar-blank"></i> Mar 3, 2026 · 08:55 AM</div>
+                <div class="timeline-title"><i class="ph ph-lightning"></i> Power Supply Fault — Unit D Service Lift</div>
+                <p class="timeline-desc">Unit D failed to respond to call signals due to control board power supply fault. Board replaced under warranty. Full diagnostic test passed.</p>
+                <div class="timeline-meta"><span class="badge badge-red">Emergency</span><span class="badge badge-green">Resolved · 55 min</span><span class="badge badge-muted">Eng. Priya Nair</span></div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot resolved"></div>
+              <div class="timeline-card">
+                <div class="timeline-date"><i class="ph ph-calendar-blank"></i> Nov 15, 2025 · 09:00 AM</div>
+                <div class="timeline-title"><i class="ph ph-wrench"></i> Brake Lining Wear — Unit C Escalator</div>
+                <p class="timeline-desc">Routine inspection revealed brake lining wear beyond 70% threshold. Scheduled replacement completed during off-peak hours with zero disruption to building occupants.</p>
+                <div class="timeline-meta"><span class="badge badge-blue">Planned</span><span class="badge badge-green">Completed</span><span class="badge badge-muted">Eng. Hassan Al-Rashid</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CONTRACTS PANEL ── -->
+        <div class="dash-panel" id="dpanel-contracts">
+          <div class="dashboard-topbar">
+            <div><div class="dashboard-title">Contracts & Renewals</div><div class="dashboard-subtitle">Manage your service agreements and renewal dates</div></div>
+            <a class="btn btn-gold btn-sm" href="contact.html">Request Renewal</a>
+          </div>
+
+          <div class="renewal-card">
+            <div class="renewal-days-block"><div class="renewal-days-num">87</div><div class="renewal-days-label">Days Left</div></div>
+            <div class="renewal-info">
+              <div class="renewal-contract-name">Professional Maintenance Contract — Skyline Towers</div>
+              <div class="renewal-details"><span><i class="ph ph-clipboard"></i> Contract #VX-2024-0087</span><span><i class="ph ph-calendar"></i> Expires Dec 12, 2026</span><span><i class="ph ph-currency-dollar"></i> $699/month</span></div>
+            </div>
+            <div class="renewal-progress-wrap" style="min-width:200px">
+              <div class="renewal-progress-label"><span>Contract progress</span><span>76%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:76%"></div></div>
+            </div>
+          </div>
+
+          <div class="renewal-card">
+            <div class="renewal-days-block urgent"><div class="renewal-days-num">19</div><div class="renewal-days-label">Days Left</div></div>
+            <div class="renewal-info">
+              <div class="renewal-contract-name">Electrical Safety Certificate Renewal</div>
+              <div class="renewal-details"><span><i class="ph ph-clipboard"></i> Cert #ELEC-SKY-2025-044</span><span><i class="ph ph-calendar"></i> Expires Oct 4, 2026</span><span><i class="ph ph-warning" style="color:#FACC15"></i>️ Action Required</span></div>
+            </div>
+            <div style="flex-shrink:0">
+              <a class="btn btn-gold btn-sm" href="contact.html">Renew Now</a>
+            </div>
+          </div>
+
+          <div class="renewal-card">
+            <div class="renewal-days-block"><div class="renewal-days-num">550</div><div class="renewal-days-label">Days Left</div></div>
+            <div class="renewal-info">
+              <div class="renewal-contract-name">Accessibility Compliance Certificate</div>
+              <div class="renewal-details"><span><i class="ph ph-clipboard"></i> Cert #ADA-SKY-2026-008</span><span><i class="ph ph-calendar"></i> Expires Jan 19, 2028</span></div>
+            </div>
+            <div class="renewal-progress-wrap" style="min-width:200px">
+              <div class="renewal-progress-label"><span>Certificate validity</span><span>95%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:95%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+<!-- ════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════ -->
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
