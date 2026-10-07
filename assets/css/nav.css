@@ -37,7 +37,8 @@
   display: flex;
   align-items: center;
   height: 100%;
-  gap: var(--space-xl);
+  gap: var(--space-md);
+  justify-content: space-between;
 }
 
 /* ── Logo ── */
@@ -102,7 +103,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 8px 14px;
+  padding: 8px 10px;
   border-radius: var(--radius-md);
   font-size: 0.875rem;
   font-weight: 500;
