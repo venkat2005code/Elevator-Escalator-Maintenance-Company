@@ -118,7 +118,9 @@
   background: rgba(201, 148, 58, 0.08);
 }
 
-.nav-link.active { color: var(--gold); }
+.nav-link.active {
+  color: var(--gold);
+}
 
 .nav-link .caret {
   width: 14px;
@@ -234,10 +236,26 @@
   background: rgba(201, 148, 58, 0.2);
 }
 
-.dropdown-item .dd-text { display: flex; flex-direction: column; gap: 1px; }
-.dropdown-item .dd-label { font-weight: 600; color: var(--text-primary); font-size: 0.85rem; }
-.dropdown-item:hover .dd-label { color: var(--gold); }
-.dropdown-item .dd-desc { font-size: 0.72rem; color: var(--text-muted); }
+.dropdown-item .dd-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.dropdown-item .dd-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.dropdown-item:hover .dd-label {
+  color: var(--gold);
+}
+
+.dropdown-item .dd-desc {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
 
 /* ── Right Nav Controls ── */
 .nav-controls {
@@ -310,11 +328,25 @@
   transition: all var(--dur-mid) var(--ease-out);
 }
 
-.theme-toggle .icon-moon { opacity: 1; transform: translateY(0) rotate(0); }
-.theme-toggle .icon-sun  { opacity: 0; transform: translateY(10px) rotate(-90deg); }
+.theme-toggle .icon-moon {
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
 
-[data-theme="light"] .theme-toggle .icon-moon { opacity: 0; transform: translateY(-10px) rotate(90deg); }
-[data-theme="light"] .theme-toggle .icon-sun  { opacity: 1; transform: translateY(0) rotate(0); }
+.theme-toggle .icon-sun {
+  opacity: 0;
+  transform: translateY(10px) rotate(-90deg);
+}
+
+[data-theme="light"] .theme-toggle .icon-moon {
+  opacity: 0;
+  transform: translateY(-10px) rotate(90deg);
+}
+
+[data-theme="light"] .theme-toggle .icon-sun {
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+}
 
 /* ── Login CTA Button ── */
 .nav-login-btn {
@@ -345,7 +377,9 @@
   transition: background var(--dur-fast);
 }
 
-.hamburger:hover { background: rgba(201, 148, 58, 0.08); }
+.hamburger:hover {
+  background: rgba(201, 148, 58, 0.08);
+}
 
 .hamburger span {
   display: block;
@@ -356,9 +390,20 @@
   transition: all var(--dur-mid) var(--ease-out);
 }
 
-.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); background: var(--gold); }
-.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); background: var(--gold); }
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background: var(--gold);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  background: var(--gold);
+}
 
 /* ── Mobile Menu ── */
 #mobile-menu {
@@ -375,7 +420,9 @@
   animation: slideDown var(--dur-mid) var(--ease-out);
 }
 
-#mobile-menu.open { display: block; }
+#mobile-menu.open {
+  display: block;
+}
 
 .mobile-nav-link {
   display: flex;
@@ -392,14 +439,19 @@
 }
 
 .mobile-nav-link:hover,
-.mobile-nav-link.active { color: var(--gold); background: rgba(201, 148, 58, 0.06); }
+.mobile-nav-link.active {
+  color: var(--gold);
+  background: rgba(201, 148, 58, 0.06);
+}
 
 .mobile-submenu {
   padding-left: var(--space-md);
   display: none;
 }
 
-.mobile-submenu.open { display: block; }
+.mobile-submenu.open {
+  display: block;
+}
 
 .mobile-sub-link {
   display: flex;
@@ -413,7 +465,9 @@
   transition: all var(--dur-fast);
 }
 
-.mobile-sub-link:hover { color: var(--gold); }
+.mobile-sub-link:hover {
+  color: var(--gold);
+}
 
 .mobile-controls {
   display: flex;
@@ -431,17 +485,36 @@
 
 /* ── Responsive Nav ── */
 @media (max-width: 1100px) {
-  .nav-links { gap: 2px; }
-  .nav-link { padding: 7px 10px; font-size: 0.825rem; }
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-link {
+    padding: 7px 10px;
+    font-size: 0.825rem;
+  }
 }
 
 @media (max-width: 900px) {
-  .nav-links { display: none; }
-  .hamburger { display: flex; }
-  .nav-login-btn { display: none; }
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-login-btn {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
-  .nav-logo-text .brand-sub { display: none; }
-  .dir-toggle .dir-label { display: none; }
+  .nav-logo-text .brand-sub {
+    display: none;
+  }
+
+  .dir-toggle .dir-label {
+    display: none;
+  }
 }

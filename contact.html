@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VertEx — Premium Elevator & Escalator Maintenance</title>
-  <meta name="description" content="VertEx offers world-class elevator and escalator installation, maintenance, modernization, and compliance services with a 99.7% uptime guarantee." />
+  <meta name="description"
+    content="VertEx offers world-class elevator and escalator installation, maintenance, modernization, and compliance services with a 99.7% uptime guarantee." />
   <meta name="theme-color" content="#C9943A" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/nav.css" />
   <link rel="stylesheet" href="assets/css/dashboard.css" />
@@ -16,331 +20,373 @@
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="icon" type="image/png" href="assets/images/logo.png" />
 </head>
+
 <body>
-<header id="main-header">
-  <div class="container nav-inner">
+  <header id="main-header">
+    <div class="container nav-inner">
 
-    <!-- Logo -->
-    <a class="nav-logo" href="index.html">
-      <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" />
-      <div class="nav-logo-text">
-        <span class="brand-name">VertEx</span>
-      </div>
-    </a>
-
-    <!-- Desktop Nav Links -->
-    <nav class="nav-links" aria-label="Main navigation">
-
-      <!-- Home Dropdown -->
-      <div class="nav-item" data-dropdown data-views="view-home1,view-home2">
-        <span class="nav-link" tabindex="0" id="nav-home">
-          Home
-          <svg class="caret" viewBox="0 0 16 16" fill="currentColor"><path d="M4 6l4 4 4-4"/></svg>
-        </span>
-        <div class="nav-dropdown" role="menu">
-          <a class="dropdown-item" href="index.html" role="menuitem">
-            <span class="dd-icon"><i class="ph ph-building"></i></span>
-            <span class="dd-text">
-              <span class="dd-label">Home 1</span>
-              <span class="dd-desc">Classic professional layout</span>
-            </span>
-          </a>
-          <a class="dropdown-item" href="home2.html" role="menuitem">
-            <span class="dd-icon"><i class="ph ph-gear"></i></span>
-            <span class="dd-text">
-              <span class="dd-label">Home 2</span>
-              <span class="dd-desc">Industrial dark split view</span>
-            </span>
-          </a>
+      <!-- Logo -->
+      <a class="nav-logo" href="index.html">
+        <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="brand-name">VertEx</span>
         </div>
-      </div>
+      </a>
 
-      <a class="nav-link" href="about.html" tabindex="0">Our Company</a>
-      <a class="nav-link" href="services.html" tabindex="0">Lift Services</a>
-      <a class="nav-link" href="compliance.html" tabindex="0">Safety & Code</a>
-      <a class="nav-link" href="pricing.html" tabindex="0">Service Contracts</a>
-      <a class="nav-link" href="contact.html" tabindex="0">Request Service</a>
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" aria-label="Main navigation">
 
-      <!-- Dashboard Dropdown -->
-      <div class="nav-item" data-dropdown data-views="view-dashboard-user,view-dashboard-admin">
-        <span class="nav-link" tabindex="0">
-          Client Portal
-          <svg class="caret" viewBox="0 0 16 16" fill="currentColor"><path d="M4 6l4 4 4-4"/></svg>
-        </span>
-        <div class="nav-dropdown" role="menu">
-          <a class="dropdown-item" href="dashboard-user.html" role="menuitem">
-            <span class="dd-icon"><i class="ph ph-user"></i></span>
-            <span class="dd-text">
-              <span class="dd-label">User Dashboard</span>
-              <span class="dd-desc">Client portal & tickets</span>
-            </span>
-          </a>
-          <a class="dropdown-item" href="dashboard-admin.html" role="menuitem">
-            <span class="dd-icon"><i class="ph ph-shield-check"></i></span>
-            <span class="dd-text">
-              <span class="dd-label">Admin Dashboard</span>
-              <span class="dd-desc">Operations overview</span>
-            </span>
-          </a>
+        <!-- Home Dropdown -->
+        <div class="nav-item" data-dropdown data-views="view-home1,view-home2">
+          <span class="nav-link" tabindex="0" id="nav-home">
+            Home
+            <svg class="caret" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M4 6l4 4 4-4" />
+            </svg>
+          </span>
+          <div class="nav-dropdown" role="menu">
+            <a class="dropdown-item" href="index.html" role="menuitem">
+              <span class="dd-icon"><i class="ph ph-building"></i></span>
+              <span class="dd-text">
+                <span class="dd-label">Home 1</span>
+                <span class="dd-desc">Classic professional layout</span>
+              </span>
+            </a>
+            <a class="dropdown-item" href="home2.html" role="menuitem">
+              <span class="dd-icon"><i class="ph ph-gear"></i></span>
+              <span class="dd-text">
+                <span class="dd-label">Home 2</span>
+                <span class="dd-desc">Industrial dark split view</span>
+              </span>
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
 
-    <!-- Right Controls -->
-    <div class="nav-controls">
-      <!-- RTL/LTR Toggle -->
-      <button class="dir-toggle" id="dir-toggle" aria-label="Toggle text direction" title="Toggle RTL/LTR">
-        <span class="dir-icon"><i class="ph ph-arrows-left-right"></i></span>
-        <span class="dir-label" id="dir-label">LTR</span>
+        <a class="nav-link" href="about.html" tabindex="0">Our Company</a>
+        <a class="nav-link" href="services.html" tabindex="0">Lift Services</a>
+        <a class="nav-link" href="compliance.html" tabindex="0">Safety & Code</a>
+        <a class="nav-link" href="pricing.html" tabindex="0">Service Contracts</a>
+        <a class="nav-link" href="contact.html" tabindex="0">Request Service</a>
+
+        <!-- Dashboard Dropdown -->
+        <div class="nav-item" data-dropdown data-views="view-dashboard-user,view-dashboard-admin">
+          <span class="nav-link" tabindex="0">
+            Client Portal
+            <svg class="caret" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M4 6l4 4 4-4" />
+            </svg>
+          </span>
+          <div class="nav-dropdown" role="menu">
+            <a class="dropdown-item" href="dashboard-user.html" role="menuitem">
+              <span class="dd-icon"><i class="ph ph-user"></i></span>
+              <span class="dd-text">
+                <span class="dd-label">User Dashboard</span>
+                <span class="dd-desc">Client portal & tickets</span>
+              </span>
+            </a>
+            <a class="dropdown-item" href="dashboard-admin.html" role="menuitem">
+              <span class="dd-icon"><i class="ph ph-shield-check"></i></span>
+              <span class="dd-text">
+                <span class="dd-label">Admin Dashboard</span>
+                <span class="dd-desc">Operations overview</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="nav-controls">
+        <!-- RTL/LTR Toggle -->
+        <button class="dir-toggle" id="dir-toggle" aria-label="Toggle text direction" title="Toggle RTL/LTR">
+          <span class="dir-icon"><i class="ph ph-arrows-left-right"></i></span>
+          <span class="dir-label" id="dir-label">LTR</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span class="icon-moon"><i class="ph ph-moon"></i></span>
+          <span class="icon-sun"><i class="ph ph-sun"></i></span>
+        </button>
+
+        <!-- Login CTA -->
+        <a class="nav-login-btn" href="login.html" style="cursor:pointer">Client Login</a>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-nav-link" data-submenu="mob-home-sub">
+      Home <span class="mobile-caret" style="transition:transform .3s">▾</span>
+    </div>
+    <div class="mobile-submenu" id="mob-home-sub">
+      <a class="mobile-sub-link" href="index.html"><i class="ph ph-building"></i> Home 1</a>
+      <a class="mobile-sub-link" href="home2.html"><i class="ph ph-gear"></i> Home 2</a>
+    </div>
+    <a class="mobile-nav-link" href="about.html">Our Company</a>
+    <a class="mobile-nav-link" href="services.html">Lift Services</a>
+    <a class="mobile-nav-link" href="compliance.html">Safety & Code</a>
+    <a class="mobile-nav-link" href="pricing.html">Service Contracts</a>
+    <a class="mobile-nav-link" href="contact.html">Request Service</a>
+    <div class="mobile-nav-link" data-submenu="mob-dash-sub">
+      Client Portal <span class="mobile-caret" style="transition:transform .3s">▾</span>
+    </div>
+    <div class="mobile-submenu" id="mob-dash-sub">
+      <a class="mobile-sub-link" href="dashboard-user.html"><i class="ph ph-user"></i> User Dashboard</a>
+      <a class="mobile-sub-link" href="dashboard-admin.html"><i class="ph ph-shield-check"></i> Admin Dashboard</a>
+    </div>
+    <div class="mobile-controls">
+      <button class="dir-toggle" onclick="document.getElementById('dir-toggle').click()" style="font-size:.8rem"><i
+          class="ph ph-arrows-left-right"></i> <span id="mob-dir-label">LTR</span></button>
+      <button class="theme-toggle" onclick="document.getElementById('theme-toggle').click()" style="position:relative">
+        <span class="icon-moon"><i class="ph ph-moon"></i></span><span class="icon-sun"><i class="ph ph-sun"></i></span>
       </button>
-
-      <!-- Theme Toggle -->
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
-        <span class="icon-moon"><i class="ph ph-moon"></i></span>
-        <span class="icon-sun"><i class="ph ph-sun"></i></span>
-      </button>
-
-      <!-- Login CTA -->
-      <a class="nav-login-btn" href="login.html" style="cursor:pointer">Client Login</a>
-
-      <!-- Hamburger -->
-      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a class="btn btn-gold btn-sm" href="login.html">Client Login</a>
     </div>
   </div>
-</header>
-<!-- Mobile Menu -->
-<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
-  <div class="mobile-nav-link" data-submenu="mob-home-sub">
-    Home <span class="mobile-caret" style="transition:transform .3s">▾</span>
-  </div>
-  <div class="mobile-submenu" id="mob-home-sub">
-    <a class="mobile-sub-link" href="index.html"><i class="ph ph-building"></i> Home 1</a>
-    <a class="mobile-sub-link" href="home2.html"><i class="ph ph-gear"></i> Home 2</a>
-  </div>
-  <a class="mobile-nav-link" href="about.html">Our Company</a>
-  <a class="mobile-nav-link" href="services.html">Lift Services</a>
-  <a class="mobile-nav-link" href="compliance.html">Safety & Code</a>
-  <a class="mobile-nav-link" href="pricing.html">Service Contracts</a>
-  <a class="mobile-nav-link" href="contact.html">Request Service</a>
-  <div class="mobile-nav-link" data-submenu="mob-dash-sub">
-    Client Portal <span class="mobile-caret" style="transition:transform .3s">▾</span>
-  </div>
-  <div class="mobile-submenu" id="mob-dash-sub">
-    <a class="mobile-sub-link" href="dashboard-user.html"><i class="ph ph-user"></i> User Dashboard</a>
-    <a class="mobile-sub-link" href="dashboard-admin.html"><i class="ph ph-shield-check"></i> Admin Dashboard</a>
-  </div>
-  <div class="mobile-controls">
-    <button class="dir-toggle" onclick="document.getElementById('dir-toggle').click()" style="font-size:.8rem"><i class="ph ph-arrows-left-right"></i> <span id="mob-dir-label">LTR</span></button>
-    <button class="theme-toggle" onclick="document.getElementById('theme-toggle').click()" style="position:relative">
-      <span class="icon-moon"><i class="ph ph-moon"></i></span><span class="icon-sun"><i class="ph ph-sun"></i></span>
-    </button>
-    <a class="btn btn-gold btn-sm" href="login.html">Client Login</a>
-  </div>
-</div>
-<main id="page-content">
+  <main id="page-content">
 
-  <div class="contact-hero section-sm">
-    <div class="container text-center">
-      <div class="section-label" style="justify-content:center">Get in Touch</div>
-      <h1 class="font-display text-5xl font-bold" style="margin-bottom:1rem">We're Here to Help</h1>
-      <div class="gold-divider center"></div>
-      <p class="text-secondary" style="max-width:600px; margin:1.5rem auto 0; font-size:.95rem; line-height:1.7">Whether you need immediate emergency dispatch or want to discuss a new maintenance contract, our team is ready to assist you 24/7.</p>
+    <div class="contact-hero section-sm">
+      <div class="container text-center">
+        <div class="section-label" style="justify-content:center">Get in Touch</div>
+        <h1 class="font-display text-5xl font-bold" style="margin-bottom:1rem">We're Here to Help</h1>
+        <div class="gold-divider center"></div>
+        <p class="text-secondary" style="max-width:600px; margin:1.5rem auto 0; font-size:.95rem; line-height:1.7">
+          Whether you need immediate emergency dispatch or want to discuss a new maintenance contract, our team is ready
+          to assist you 24/7.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="section" style="padding-top:0">
-    <div class="container">
-      <div class="contact-grid">
-        <!-- Info -->
-        <div>
-          <div class="contact-info-card">
-            <div class="contact-info-item">
-              <div class="contact-info-icon"><i class="ph ph-map-pin"></i></div>
-              <div><div class="contact-info-label">Head Office</div><div class="contact-info-value">VertEx Tower, 12th Floor, Sheikh Zayed Road, Dubai, UAE</div></div>
+    <div class="section" style="padding-top:0">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Info -->
+          <div>
+            <div class="contact-info-card">
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="ph ph-map-pin"></i></div>
+                <div>
+                  <div class="contact-info-label">Head Office</div>
+                  <div class="contact-info-value">VertEx Tower, 12th Floor, Sheikh Zayed Road, Dubai, UAE</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="ph ph-phone"></i></div>
+                <div>
+                  <div class="contact-info-label">Sales & Enquiries</div>
+                  <div class="contact-info-value" style="font-family:var(--font-mono)">+971 4 000 1234</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="ph ph-envelope-simple"></i>️</div>
+                <div>
+                  <div class="contact-info-label">Email</div>
+                  <div class="contact-info-value">hello@vertexlift.com</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="ph ph-clock"></i></div>
+                <div>
+                  <div class="contact-info-label">Office Hours</div>
+                  <div class="contact-info-value">Sun–Thu · 08:00 – 17:00 GST</div>
+                </div>
+              </div>
             </div>
-            <div class="contact-info-item">
-              <div class="contact-info-icon"><i class="ph ph-phone"></i></div>
-              <div><div class="contact-info-label">Sales & Enquiries</div><div class="contact-info-value" style="font-family:var(--font-mono)">+971 4 000 1234</div></div>
-            </div>
-            <div class="contact-info-item">
-              <div class="contact-info-icon"><i class="ph ph-envelope-simple"></i>️</div>
-              <div><div class="contact-info-label">Email</div><div class="contact-info-value">hello@vertexlift.com</div></div>
-            </div>
-            <div class="contact-info-item">
-              <div class="contact-info-icon"><i class="ph ph-clock"></i></div>
-              <div><div class="contact-info-label">Office Hours</div><div class="contact-info-value">Sun–Thu · 08:00 – 17:00 GST</div></div>
+            <div class="emergency-banner" style="margin-top:1.5rem">
+              <div class="emergency-icon"><i class="ph ph-warning"></i></div>
+              <div>
+                <div class="emergency-title">24/7 Emergency Hotline</div>
+                <div class="emergency-number" style="font-family:var(--font-mono)">+971 4 000 9999</div>
+                <div style="font-size:.75rem; color:rgba(255,255,255,.5); margin-top:2px">Guaranteed 45-min on-site
+                  response</div>
+              </div>
             </div>
           </div>
-          <div class="emergency-banner" style="margin-top:1.5rem">
-            <div class="emergency-icon"><i class="ph ph-warning"></i></div>
-            <div>
-              <div class="emergency-title">24/7 Emergency Hotline</div>
-              <div class="emergency-number" style="font-family:var(--font-mono)">+971 4 000 9999</div>
-              <div style="font-size:.75rem; color:rgba(255,255,255,.5); margin-top:2px">Guaranteed 45-min on-site response</div>
+
+          <!-- Form -->
+          <div class="contact-form-card">
+            <h2 class="font-display text-2xl font-bold" style="margin-bottom:.5rem; color:var(--text-primary)">Send Us a
+              Message</h2>
+            <p class="text-muted text-sm" style="margin-bottom:2rem">We'll respond within 2 business hours.</p>
+            <form class="contact-form" onsubmit="handleContactForm(event)">
+              <div class="contact-form-row">
+                <div class="form-group"><label class="form-label">First Name</label><input class="form-input"
+                    id="contact-fname" type="text" placeholder="John" required /></div>
+                <div class="form-group"><label class="form-label">Last Name</label><input class="form-input"
+                    id="contact-lname" type="text" placeholder="Smith" required /></div>
+              </div>
+              <div class="form-group"><label class="form-label">Company / Building Name</label><input class="form-input"
+                  id="contact-company" type="text" placeholder="Skyline Towers REIT" /></div>
+              <div class="contact-form-row">
+                <div class="form-group"><label class="form-label">Email Address</label><input class="form-input"
+                    id="contact-email" type="email" placeholder="john@company.com" required /></div>
+                <div class="form-group"><label class="form-label">Phone Number</label><input class="form-input"
+                    id="contact-phone" type="tel" placeholder="+971 50 000 0000" /></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Service Required</label>
+                <select class="form-select" id="contact-service">
+                  <option value="">Select a service...</option>
+                  <option>New Installation</option>
+                  <option>Planned Maintenance Contract</option>
+                  <option>Emergency Repair</option>
+                  <option>Modernization</option>
+                  <option>Compliance Inspection</option>
+                  <option>Technical Consulting</option>
+                </select>
+              </div>
+              <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea"
+                  id="contact-message" placeholder="Tell us about your property and requirements..."></textarea></div>
+              <button class="btn btn-gold w-full" style="justify-content:center; font-size:1rem" type="submit"
+                id="contact-submit-btn">Send Message →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [SECTION 3] Map & Locations -->
+    <div class="section" style="background:var(--bg-primary)">
+      <div class="container">
+        <div class="section-label" style="justify-content:center">Our Offices</div>
+        <h2 class="font-display text-4xl font-bold text-center" style="margin-bottom:3rem">Global Headquarters</h2>
+        <div
+          style="height:400px; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border-subtle)">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115582.49842475143!2d55.1951556!3d25.1378857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b4d30906263%3A0xe10839c05e192ff8!2sSheikh%20Zayed%20Rd%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- [SECTION 4] Support SLA -->
+    <div class="section" style="background:var(--bg-secondary)">
+      <div class="container text-center">
+        <div class="section-label" style="justify-content:center">Our Guarantee</div>
+        <h2 class="font-display text-4xl font-bold" style="margin-bottom:3rem">Service Level Agreements (SLA)</h2>
+        <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap">
+          <div class="card" style="width:250px">
+            <div class="text-3xl font-bold text-gold mb-2">
+              < 1 Hr</div>
+                <div class="text-sm text-secondary uppercase tracking-widest">Entrapments</div>
+            </div>
+            <div class="card" style="width:250px">
+              <div class="text-3xl font-bold text-gold mb-2">
+                < 4 Hrs</div>
+                  <div class="text-sm text-secondary uppercase tracking-widest">Critical Faults</div>
+              </div>
+              <div class="card" style="width:250px">
+                <div class="text-3xl font-bold text-gold mb-2">24 Hrs</div>
+                <div class="text-sm text-secondary uppercase tracking-widest">Routine Issues</div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Form -->
-        <div class="contact-form-card">
-          <h2 class="font-display text-2xl font-bold" style="margin-bottom:.5rem; color:var(--text-primary)">Send Us a Message</h2>
-          <p class="text-muted text-sm" style="margin-bottom:2rem">We'll respond within 2 business hours.</p>
-          <form class="contact-form" onsubmit="handleContactForm(event)">
-            <div class="contact-form-row">
-              <div class="form-group"><label class="form-label">First Name</label><input class="form-input" id="contact-fname" type="text" placeholder="John" required/></div>
-              <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" id="contact-lname" type="text" placeholder="Smith" required/></div>
-            </div>
-            <div class="form-group"><label class="form-label">Company / Building Name</label><input class="form-input" id="contact-company" type="text" placeholder="Skyline Towers REIT" /></div>
-            <div class="contact-form-row">
-              <div class="form-group"><label class="form-label">Email Address</label><input class="form-input" id="contact-email" type="email" placeholder="john@company.com" required/></div>
-              <div class="form-group"><label class="form-label">Phone Number</label><input class="form-input" id="contact-phone" type="tel" placeholder="+971 50 000 0000"/></div>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Service Required</label>
-              <select class="form-select" id="contact-service">
-                <option value="">Select a service...</option>
-                <option>New Installation</option>
-                <option>Planned Maintenance Contract</option>
-                <option>Emergency Repair</option>
-                <option>Modernization</option>
-                <option>Compliance Inspection</option>
-                <option>Technical Consulting</option>
-              </select>
-            </div>
-            <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" id="contact-message" placeholder="Tell us about your property and requirements..."></textarea></div>
-            <button class="btn btn-gold w-full" style="justify-content:center; font-size:1rem" type="submit" id="contact-submit-btn">Send Message →</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- [SECTION 3] Map & Locations -->
-  <div class="section" style="background:var(--bg-primary)">
-    <div class="container">
-      <div class="section-label" style="justify-content:center">Our Offices</div>
-      <h2 class="font-display text-4xl font-bold text-center" style="margin-bottom:3rem">Global Headquarters</h2>
-      <div style="height:400px; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border-subtle)">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115582.49842475143!2d55.1951556!3d25.1378857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b4d30906263%3A0xe10839c05e192ff8!2sSheikh%20Zayed%20Rd%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- [SECTION 4] Support SLA -->
-  <div class="section" style="background:var(--bg-secondary)">
-    <div class="container text-center">
-      <div class="section-label" style="justify-content:center">Our Guarantee</div>
-      <h2 class="font-display text-4xl font-bold" style="margin-bottom:3rem">Service Level Agreements (SLA)</h2>
-      <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap">
-        <div class="card" style="width:250px">
-          <div class="text-3xl font-bold text-gold mb-2">< 1 Hr</div>
-          <div class="text-sm text-secondary uppercase tracking-widest">Entrapments</div>
-        </div>
-        <div class="card" style="width:250px">
-          <div class="text-3xl font-bold text-gold mb-2">< 4 Hrs</div>
-          <div class="text-sm text-secondary uppercase tracking-widest">Critical Faults</div>
-        </div>
-        <div class="card" style="width:250px">
-          <div class="text-3xl font-bold text-gold mb-2">24 Hrs</div>
-          <div class="text-sm text-secondary uppercase tracking-widest">Routine Issues</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- [SECTION 5] Live Chat -->
-  <div class="section" style="background:var(--bg-primary)">
-    <div class="container text-center">
-      <div class="section-label" style="justify-content:center">Instant Support</div>
-      <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.5rem">Client Portal Live Chat</h2>
-      <p class="text-secondary" style="max-width:600px; margin:0 auto 2rem">Already a client? Log into your dashboard for immediate 24/7 live chat support with a certified dispatcher.</p>
-      <a class="btn btn-outline" href="login.html">Login to Portal</a>
-    </div>
-  </div>
-
-  <!-- [SECTION 6] Newsletter -->
-  <div class="section" style="background:linear-gradient(135deg, rgba(13,17,23,.92) 0%, rgba(13,17,23,.75) 100%), url('assets/images/footer_cta_bg.jpg') center/cover; position:relative; border-top:1px solid var(--border-subtle); color:#fff;">
-    <div class="container text-center">
-      <div class="section-label" style="color:var(--gold); justify-content:center">Stay Updated</div>
-      <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.5rem">Regulatory Newsletter</h2>
-      <p style="color:rgba(255,255,255,.7); max-width:600px; margin:0 auto 2rem">Safety codes change constantly. Subscribe to receive monthly updates on local compliance and modernization strategies.</p>
-      <form style="display:flex; max-width:400px; margin:0 auto; gap:.5rem">
-        <input type="email" class="form-input" placeholder="Your Email Address" style="flex:1" required>
-        <button type="submit" class="btn btn-gold">Subscribe</button>
-      </form>
-    </div>
-  </div>
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <!-- Brand -->
-        <div class="footer-col-brand">
-          <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem">
-            <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img" style="width:48px; height:48px;"/>
-            <div class="footer-brand-name" style="margin:0">VertEx</div>
-          </div>
-          <p class="footer-brand-desc" style="margin-bottom:1.5rem">25 years of precision. One mission: keeping the world moving — safely upward.</p>
-                    <div class="footer-socials">
-            <a href="#" class="footer-social" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
-            <a href="#" class="footer-social" title="Twitter"><i class="ph ph-x-logo"></i></a>
-            <a href="#" class="footer-social" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
-            <a href="#" class="footer-social" title="Facebook"><i class="ph ph-facebook-logo"></i></a>
+        <!-- [SECTION 5] Live Chat -->
+        <div class="section" style="background:var(--bg-primary)">
+          <div class="container text-center">
+            <div class="section-label" style="justify-content:center">Instant Support</div>
+            <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.5rem">Client Portal Live Chat</h2>
+            <p class="text-secondary" style="max-width:600px; margin:0 auto 2rem">Already a client? Log into your
+              dashboard for immediate 24/7 live chat support with a certified dispatcher.</p>
+            <a class="btn btn-outline" href="login.html">Login to Portal</a>
           </div>
         </div>
-        
-        <!-- Quick Links -->
-        <div>
-          <div class="footer-heading">Quick Links</div>
-          <a class="footer-link" href="index.html">Home</a>
-          <a class="footer-link" href="about.html">About Us</a>
-          <a class="footer-link" href="services.html">Lift Services</a>
-          <a class="footer-link" href="compliance.html">Safety & Code</a>
-          <a class="footer-link" href="pricing.html">Service Contracts</a>
-          <a class="footer-link" href="contact.html">Request Service</a>
+
+        <!-- [SECTION 6] Newsletter -->
+        <div class="section"
+          style="background:linear-gradient(135deg, rgba(13,17,23,.92) 0%, rgba(13,17,23,.75) 100%), url('assets/images/footer_cta_bg.jpg') center/cover; position:relative; border-top:1px solid var(--border-subtle); color:#fff;">
+          <div class="container text-center">
+            <div class="section-label" style="color:var(--gold); justify-content:center">Stay Updated</div>
+            <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.5rem">Regulatory Newsletter</h2>
+            <p style="color:rgba(255,255,255,.7); max-width:600px; margin:0 auto 2rem">Safety codes change constantly.
+              Subscribe to receive monthly updates on local compliance and modernization strategies.</p>
+            <form style="display:flex; max-width:400px; margin:0 auto; gap:.5rem">
+              <input type="email" class="form-input" placeholder="Your Email Address" style="flex:1" required>
+              <button type="submit" class="btn btn-gold">Subscribe</button>
+            </form>
+          </div>
         </div>
 
-        <!-- Client Zone -->
-        <div>
-          <div class="footer-heading">Client Zone</div>
-          <a class="footer-link" href="login.html">Client Login</a>
-          <a class="footer-link" href="dashboard-user.html">My Dashboard</a>
-          <a class="footer-link" href="dashboard-admin.html">Admin Portal</a>
-          <a class="footer-link" href="dashboard-user.html">Service Tickets</a>
-        </div>
 
-        <!-- Contact Us -->
-        <div>
-          <div class="footer-heading">Contact Us</div>
-          <a class="footer-link" href="contact.html" style="display:flex; align-items:flex-start; gap:0.5rem">
-            <i class="ph ph-map-pin" style="margin-top:4px; color:var(--gold); font-size:1.1rem"></i>
-            <span>VertEx Tower, 12th Floor<br>Sheikh Zayed Road, Dubai</span>
-          </a>
-          <a class="footer-link" href="tel:+97140001234" style="display:flex; align-items:center; gap:0.5rem">
-            <i class="ph ph-phone" style="color:var(--gold); font-size:1.1rem"></i> +971 4 000 1234
-          </a>
-          <a class="footer-link" href="mailto:hello@vertexlift.com" style="display:flex; align-items:center; gap:0.5rem">
-            <i class="ph ph-envelope-simple" style="color:var(--gold); font-size:1.1rem"></i> hello@vertexlift.com
-          </a>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <span class="footer-copy">© 2026 VertEx. All rights reserved.</span>
-        <div class="footer-legal" style="display:flex; gap:1.5rem; flex-wrap:wrap">
-          <a href="#" class="footer-link" style="padding:0">Privacy Policy</a>
-          <a href="#" class="footer-link" style="padding:0">Terms & Conditions</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-</main>
-<!-- ════════════════════════════════════════════
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-grid">
+              <!-- Brand -->
+              <div class="footer-col-brand">
+                <div style="display:flex; align-items:center; gap:.75rem; margin-bottom:1rem">
+                  <img src="assets/images/logo.png" alt="VertEx Logo" class="nav-logo-img"
+                    style="width:48px; height:48px;" />
+                  <div class="footer-brand-name" style="margin:0">VertEx</div>
+                </div>
+                <p class="footer-brand-desc" style="margin-bottom:1.5rem">25 years of precision. One mission: keeping
+                  the world moving — safely upward.</p>
+                <div class="footer-socials">
+                  <a href="#" class="footer-social" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                  <a href="#" class="footer-social" title="Twitter"><i class="ph ph-x-logo"></i></a>
+                  <a href="#" class="footer-social" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                  <a href="#" class="footer-social" title="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                </div>
+              </div>
+
+              <!-- Quick Links -->
+              <div>
+                <div class="footer-heading">Quick Links</div>
+                <a class="footer-link" href="index.html">Home</a>
+                <a class="footer-link" href="about.html">About Us</a>
+                <a class="footer-link" href="services.html">Lift Services</a>
+                <a class="footer-link" href="compliance.html">Safety & Code</a>
+                <a class="footer-link" href="pricing.html">Service Contracts</a>
+                <a class="footer-link" href="contact.html">Request Service</a>
+              </div>
+
+              <!-- Client Zone -->
+              <div>
+                <div class="footer-heading">Client Zone</div>
+                <a class="footer-link" href="login.html">Client Login</a>
+                <a class="footer-link" href="dashboard-user.html">My Dashboard</a>
+                <a class="footer-link" href="dashboard-admin.html">Admin Portal</a>
+                <a class="footer-link" href="dashboard-user.html">Service Tickets</a>
+              </div>
+
+              <!-- Contact Us -->
+              <div>
+                <div class="footer-heading">Contact Us</div>
+                <a class="footer-link" href="contact.html" style="display:flex; align-items:flex-start; gap:0.5rem">
+                  <i class="ph ph-map-pin" style="margin-top:4px; color:var(--gold); font-size:1.1rem"></i>
+                  <span>VertEx Tower, 12th Floor<br>Sheikh Zayed Road, Dubai</span>
+                </a>
+                <a class="footer-link" href="tel:+97140001234" style="display:flex; align-items:center; gap:0.5rem">
+                  <i class="ph ph-phone" style="color:var(--gold); font-size:1.1rem"></i> +971 4 000 1234
+                </a>
+                <a class="footer-link" href="mailto:hello@vertexlift.com"
+                  style="display:flex; align-items:center; gap:0.5rem">
+                  <i class="ph ph-envelope-simple" style="color:var(--gold); font-size:1.1rem"></i> hello@vertexlift.com
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-bottom">
+              <span class="footer-copy">© 2026 VertEx. All rights reserved.</span>
+              <div class="footer-legal" style="display:flex; gap:1.5rem; flex-wrap:wrap">
+                <a href="#" class="footer-link" style="padding:0">Privacy Policy</a>
+                <a href="#" class="footer-link" style="padding:0">Terms & Conditions</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+  </main>
+  <!-- ════════════════════════════════════════════
      SCRIPTS
 ════════════════════════════════════════════ -->
-<script src="assets/js/nav.js"></script>
-<script src="assets/js/main.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
