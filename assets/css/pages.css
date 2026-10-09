@@ -249,8 +249,8 @@
 .footer-bottom{border-top:1px solid var(--border-subtle);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 .footer-copy{font-size:.78rem;color:var(--text-muted)}
 .footer-socials{display:flex;gap:.75rem}
-.footer-social{width:36px;height:36px;border-radius:var(--radius-full);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:.85rem;cursor:pointer;transition:all var(--dur-fast)}
-.footer-social:hover{border-color:var(--gold);color:var(--gold)}
+.footer-social{width:48px;height:48px;border-radius:var(--radius-full);border:1.5px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:1.25rem;cursor:pointer;transition:all var(--dur-fast)}
+.footer-social:hover{border-color:var(--gold);color:var(--gold);background:rgba(201,148,58,.08);transform:translateY(-3px);box-shadow:0 6px 20px rgba(201,148,58,.2)}
 
 /* ROI Calculator */
 .roi-calc-card {
@@ -320,6 +320,10 @@
   align-items: center;
   text-align: center;
 }
+[data-theme="light"] .roi-output {
+  background: #1A3C5E;
+  border-color: rgba(201, 148, 58, 0.6);
+}
 .roi-output-label {
   font-size: 1rem;
   font-weight: 700;
@@ -328,6 +332,7 @@
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
 }
+[data-theme="light"] .roi-output-label { color: rgba(255,255,255,.75); }
 .roi-output-value {
   font-family: var(--font-display);
   font-size: 4rem;
@@ -342,3 +347,80 @@
   line-height: 1.5;
   max-width: 300px;
 }
+[data-theme="light"] .roi-output-desc { color: rgba(255,255,255,.8); }
+
+/* Emergency banner light mode fix */
+[data-theme="light"] .emergency-banner {
+  background: linear-gradient(135deg, rgba(185,28,28,.12), rgba(185,28,28,.06));
+  border-color: rgba(185,28,28,.4);
+}
+[data-theme="light"] .emergency-number {
+  color: #991B1B;
+}
+[data-theme="light"] .emergency-title {
+  color: #B91C1C;
+}
+[data-theme="light"] .emergency-banner .emergency-icon {
+  color: #DC2626;
+}
+[data-theme="light"] .emergency-banner div[style*='rgba(255,255,255,.5)'] {
+  color: #4B5563 !important;
+}
+
+/* btn-outline light mode contrast fix */
+[data-theme="light"] .hero-actions .btn-outline {
+  border-color: rgba(255,255,255,0.7);
+  color: #fff;
+  background: rgba(255,255,255,0.12);
+}
+[data-theme="light"] .hero-actions .btn-outline:hover {
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Home Sections - Service Overview Cards */
+.home-service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--dur-mid) var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+.home-service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur-mid) var(--ease-out);
+}
+.home-service-card:hover::before { transform: scaleX(1); }
+.home-service-card:hover { border-color: var(--border-mid); transform: translateY(-6px); box-shadow: 0 24px 48px rgba(0,0,0,.4); }
+.home-service-icon { width: 56px; height: 56px; border-radius: var(--radius-md); background: linear-gradient(135deg, rgba(201,148,58,.15), rgba(201,148,58,.05)); border: 1px solid rgba(201,148,58,.25); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem; color: var(--gold); }
+.home-service-title { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: .5rem; }
+.home-service-desc { font-size: .875rem; color: var(--text-secondary); line-height: 1.65; }
+
+/* Service Areas section */
+.service-areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.service-area-pill { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1rem 1.5rem; display: flex; align-items: center; gap: .75rem; transition: all var(--dur-fast) var(--ease-out); cursor: default; }
+.service-area-pill:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(201,148,58,.15); }
+.service-area-pill i { color: var(--gold); font-size: 1.1rem; }
+
+/* Industries grid */
+.industries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+.industry-card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); overflow: hidden; transition: all var(--dur-mid) var(--ease-out); }
+.industry-card:hover { border-color: var(--border-mid); transform: translateY(-6px); box-shadow: 0 24px 48px rgba(0,0,0,.35); }
+.industry-card-img { height: 180px; overflow: hidden; position: relative; }
+.industry-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease-out); }
+.industry-card:hover .industry-card-img img { transform: scale(1.06); }
+.industry-card-body { padding: 1.5rem; }
+.industry-card-title { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: .35rem; }
+.industry-card-desc { font-size: .8rem; color: var(--text-secondary); line-height: 1.6; }
+
+/* Contact hero spacing */
+.contact-hero-gap { padding-top: 3rem; }

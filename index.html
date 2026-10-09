@@ -156,49 +156,58 @@
     <div class="hero">
       <div class="hero-bg" style="background-image:url('assets/images/hero1.jpg')"></div>
       <div class="container hero-content" style="padding-top:calc(var(--nav-height) + 2rem); padding-bottom:4rem;">
-        <div style="display:grid; grid-template-columns:1fr auto; gap:3rem; align-items:center;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;" id="hero-grid">
           <div>
-            <div class="h1-badge"><span class="dot dot-green"></span> 99.7% System Uptime Guaranteed</div>
+            <div class="h1-badge"><span class="dot dot-green"></span> Dubai's #1 Certified Lift Maintenance Company</div>
             <h1 class="hero-headline">
-              Elevating <em>Excellence</em><br />in Every Lift & Escalator
+              Expert <em>Elevator &amp;<br/>Escalator</em> Maintenance
             </h1>
-            <p class="hero-sub">Trusted by 500+ commercial properties. VertEx delivers precision maintenance, rapid
-              emergency response, and full compliance certification — keeping your vertical transport running
-              flawlessly.</p>
+            <p class="hero-sub">From high-rises to hospitals, VertEx keeps your vertical transport running safely — with ISO-certified engineers, 24/7 emergency response, and full regulatory compliance.</p>
             <div class="hero-actions">
-              <a class="btn btn-gold btn-lg" href="contact.html"><i class="ph ph-clipboard"></i> Request a Quote</a>
+              <a class="btn btn-gold btn-lg" href="contact.html"><i class="ph ph-clipboard"></i> Request a Service</a>
               <a class="btn btn-outline btn-lg" href="services.html">Our Services →</a>
             </div>
             <div class="hero-stats">
               <div class="hero-stat-item">
-                <span class="hero-stat-num" data-count="500" data-suffix="+">500+</span>
-                <span class="hero-stat-label">Properties Served</span>
+                <span class="hero-stat-num" data-count="2500" data-suffix="+">2500+</span>
+                <span class="hero-stat-label">Units Maintained</span>
               </div>
               <div class="hero-stat-item">
-                <span class="hero-stat-num" data-count="25" data-suffix=" Yrs">25 Yrs</span>
-                <span class="hero-stat-label">Industry Experience</span>
+                <span class="hero-stat-num" data-count="99.7" data-suffix="%" data-decimals="1">99.7%</span>
+                <span class="hero-stat-label">Uptime Guaranteed</span>
               </div>
               <div class="hero-stat-item">
-                <span class="hero-stat-num" data-count="24" data-suffix="/7">24/7</span>
+                <span class="hero-stat-num" data-count="45" data-suffix="m">45m</span>
                 <span class="hero-stat-label">Emergency Response</span>
               </div>
             </div>
           </div>
-          <!-- Uptime Ring -->
-          <div class="uptime-ring-wrap" style="display:none" id="hero-ring-desktop">
-            <svg class="uptime-ring-svg" viewBox="0 0 200 200">
-              <defs>
-                <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#C9943A" />
-                  <stop offset="100%" stop-color="#E5B96A" />
-                </linearGradient>
-              </defs>
-              <circle class="uptime-ring-track" cx="100" cy="100" r="80" />
-              <circle id="uptime-ring-fill" cx="100" cy="100" r="80" />
-            </svg>
-            <div class="uptime-ring-center">
-              <span class="uptime-ring-pct" data-count="99.7" data-suffix="%" data-decimals="1">99.7%</span>
-              <span class="uptime-ring-label">Uptime SLA</span>
+          <!-- Hero Visual Panel -->
+          <div id="hero-ring-desktop" style="display:none">
+            <div style="background:rgba(13,17,23,.7);backdrop-filter:blur(16px);border:1px solid rgba(201,148,58,.25);border-radius:var(--radius-xl);padding:2rem;">
+              <div style="font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem">Our Core Services</div>
+              <div style="display:flex;flex-direction:column;gap:.85rem">
+                <div style="display:flex;align-items:center;gap:1rem;padding:.9rem 1rem;background:rgba(201,148,58,.07);border-radius:var(--radius-md);border:1px solid rgba(201,148,58,.18)">
+                  <i class="ph ph-escalator-up" style="font-size:1.5rem;color:var(--gold)"></i>
+                  <div><div style="font-weight:700;font-size:.85rem;color:#fff">Escalator Maintenance</div><div style="font-size:.75rem;color:rgba(255,255,255,.5)">Full-cycle service &amp; repair</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:1rem;padding:.9rem 1rem;background:rgba(201,148,58,.07);border-radius:var(--radius-md);border:1px solid rgba(201,148,58,.18)">
+                  <i class="ph ph-elevator" style="font-size:1.5rem;color:var(--gold)"></i>
+                  <div><div style="font-weight:700;font-size:.85rem;color:#fff">Elevator Servicing</div><div style="font-size:.75rem;color:rgba(255,255,255,.5)">Preventive &amp; corrective</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:1rem;padding:.9rem 1rem;background:rgba(201,148,58,.07);border-radius:var(--radius-md);border:1px solid rgba(201,148,58,.18)">
+                  <i class="ph ph-shield-check" style="font-size:1.5rem;color:var(--gold)"></i>
+                  <div><div style="font-weight:700;font-size:.85rem;color:#fff">Safety Inspections</div><div style="font-size:.75rem;color:rgba(255,255,255,.5)">Compliance &amp; certifications</div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:1rem;padding:.9rem 1rem;background:rgba(201,148,58,.07);border-radius:var(--radius-md);border:1px solid rgba(201,148,58,.18)">
+                  <i class="ph ph-lightning" style="font-size:1.5rem;color:var(--gold)"></i>
+                  <div><div style="font-weight:700;font-size:.85rem;color:#fff">24/7 Emergency Repair</div><div style="font-size:.75rem;color:rgba(255,255,255,.5)">Guaranteed 45-min response</div></div>
+                </div>
+              </div>
+              <div style="margin-top:1.5rem;padding:1rem;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:var(--radius-md);display:flex;align-items:center;gap:.75rem">
+                <span class="dot dot-green" style="flex-shrink:0"></span>
+                <span style="font-size:.8rem;color:rgba(255,255,255,.7)">All engineers <strong style="color:#fff">ISO 9001</strong> &amp; <strong style="color:#fff">DM certified</strong></span>
+              </div>
             </div>
           </div>
         </div>
@@ -206,7 +215,7 @@
     </div>
 
     <script>
-      // Show ring on wide screens
+      // Show hero panel on wide screens
       if (window.innerWidth > 900) document.getElementById('hero-ring-desktop').style.display = '';
     </script>
 
@@ -234,57 +243,231 @@
       </div>
     </div>
 
-    <!-- Features -->
+    <!-- Escalator Maintenance Services -->
     <div class="section">
       <div class="container">
         <div class="text-center" style="margin-bottom:3rem">
-          <div class="section-label" style="justify-content:center">Why Choose Us</div>
-          <h2 class="font-display text-4xl font-bold" style="max-width:560px; margin:0 auto .75rem">Engineering
-            Reliability Into Every Vertical Journey</h2>
-          <p class="text-secondary" style="max-width:500px; margin:0 auto; font-size:.95rem">From installation to
-            emergency callouts, our ISO-certified engineers deliver outcomes that exceed industry benchmarks.</p>
+          <div class="section-label" style="justify-content:center">Escalator Maintenance Services</div>
+          <h2 class="font-display text-4xl font-bold" style="max-width:600px;margin:0 auto .75rem">Complete Escalator Care — From Inspection to Overhaul</h2>
+          <p class="text-secondary" style="max-width:520px;margin:0 auto;font-size:.95rem">Our factory-trained technicians service all major escalator brands — Otis, KONE, Schindler, ThyssenKrupp — keeping your units safe, smooth, and code-compliant.</p>
         </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem">
+          <div class="home-service-card">
+            <div class="home-service-icon"><i class="ph ph-wrench"></i></div>
+            <div class="home-service-title">Routine Lubrication &amp; Adjustment</div>
+            <div class="home-service-desc">Regular greasing of step chains, combs, and drive components to minimise wear and extend unit lifespan beyond manufacturer benchmarks.</div>
+          </div>
+          <div class="home-service-card">
+            <div class="home-service-icon"><i class="ph ph-gear"></i></div>
+            <div class="home-service-title">Drive System Overhaul</div>
+            <div class="home-service-desc">Full inspection and replacement of motors, gearboxes, and variable frequency drives (VFDs) to restore peak performance and energy efficiency.</div>
+          </div>
+          <div class="home-service-card">
+            <div class="home-service-icon"><i class="ph ph-steps"></i></div>
+            <div class="home-service-title">Step &amp; Handrail Replacement</div>
+            <div class="home-service-desc">On-site replacement of cracked steps, worn treads, and deteriorated handrail belts — keeping surfaces safe and aesthetically immaculate.</div>
+          </div>
+          <div class="home-service-card">
+            <div class="home-service-icon"><i class="ph ph-cpu"></i></div>
+            <div class="home-service-title">Controller Modernization</div>
+            <div class="home-service-desc">Upgrade legacy relay logic to modern PLC-based controllers with remote diagnostics, fault logging, and real-time energy reporting.</div>
+          </div>
+          <div class="home-service-card">
+            <div class="home-service-icon"><i class="ph ph-drop"></i></div>
+            <div class="home-service-title">Skirt Panel &amp; Comb Repair</div>
+            <div class="home-service-desc">Replacement of worn skirt panels and broken comb teeth — critical safety components that prevent passenger entrapment incidents.</div>
+          </div>
+          <div class="home-service-card">
+            <div class="home-service-icon"><i class="ph ph-wifi-high"></i></div>
+            <div class="home-service-title">IoT Remote Monitoring</div>
+            <div class="home-service-desc">24/7 sensor-based monitoring of escalator health data, triggering automated dispatch before minor faults escalate into costly breakdowns.</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:3rem;">
-
-          <!-- Feature 1 -->
+    <!-- Preventive Maintenance -->
+    <div class="section" style="background:var(--bg-secondary)">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
           <div>
-            <img src="assets/images/feature_maintenance.png" alt="Preventive Maintenance"
-              style="width:100%; height:260px; object-fit:cover; border-radius:var(--radius-lg); box-shadow:0 15px 35px rgba(0,0,0,0.15); margin-bottom:1.5rem" />
-            <div class="icon-circle mb-4" style="width:40px; height:40px; font-size:1.2rem"><i class="ph ph-wrench"></i>
+            <img src="assets/images/feature_maintenance.png" alt="Preventive Maintenance Programme" style="width:100%;border-radius:var(--radius-xl);box-shadow:0 20px 50px rgba(0,0,0,.3);object-fit:cover;max-height:420px" />
+          </div>
+          <div>
+            <div class="section-label">Preventive Maintenance</div>
+            <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.25rem">Stop Breakdowns Before They Happen</h2>
+            <p class="text-secondary" style="margin-bottom:1.5rem;line-height:1.75">Our scheduled preventive maintenance programme uses IoT sensor data and predictive analytics to detect micro-faults in motor bearings, door mechanisms, and hydraulic systems — weeks before they cause unplanned downtime.</p>
+            <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem">
+              <div style="display:flex;align-items:flex-start;gap:.85rem">
+                <i class="ph ph-check-circle" style="color:var(--gold);font-size:1.3rem;flex-shrink:0;margin-top:2px"></i>
+                <div><strong style="color:var(--text-primary)">Monthly &amp; Quarterly Visit Schedules</strong><br><span class="text-secondary" style="font-size:.875rem">Tailored service frequencies to your usage patterns and contract tier.</span></div>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:.85rem">
+                <i class="ph ph-check-circle" style="color:var(--gold);font-size:1.3rem;flex-shrink:0;margin-top:2px"></i>
+                <div><strong style="color:var(--text-primary)">Parts &amp; Labour Included</strong><br><span class="text-secondary" style="font-size:.875rem">No surprise invoices — all replacement parts and technician time covered.</span></div>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:.85rem">
+                <i class="ph ph-check-circle" style="color:var(--gold);font-size:1.3rem;flex-shrink:0;margin-top:2px"></i>
+                <div><strong style="color:var(--text-primary)">Digital Service Reports</strong><br><span class="text-secondary" style="font-size:.875rem">Access full maintenance history and technician notes via your client portal.</span></div>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:.85rem">
+                <i class="ph ph-check-circle" style="color:var(--gold);font-size:1.3rem;flex-shrink:0;margin-top:2px"></i>
+                <div><strong style="color:var(--text-primary)">Up to 78% Fewer Breakdowns</strong><br><span class="text-secondary" style="font-size:.875rem">IoT-powered fault prediction keeps your systems operational year-round.</span></div>
+              </div>
             </div>
-            <h3 class="font-display text-2xl font-bold" style="margin-bottom:.75rem">Preventive Maintenance</h3>
-            <p class="text-secondary" style="font-size:1rem; line-height:1.6">Scheduled inspections powered by
-              predictive analytics. Our advanced IoT diagnostics allow us to identify and replace wearing components
-              before they fail, reducing unexpected downtime by up to 78%.</p>
+            <a class="btn btn-gold" href="pricing.html"><i class="ph ph-clipboard-text"></i> View Maintenance Plans</a>
           </div>
-
-          <!-- Feature 2 -->
-          <div>
-            <img src="assets/images/feature_response.png" alt="24/7 Emergency Response"
-              style="width:100%; height:260px; object-fit:cover; border-radius:var(--radius-lg); box-shadow:0 15px 35px rgba(0,0,0,0.15); margin-bottom:1.5rem" />
-            <div class="icon-circle mb-4" style="width:40px; height:40px; font-size:1.2rem"><i
-                class="ph ph-lightning"></i></div>
-            <h3 class="font-display text-2xl font-bold" style="margin-bottom:.75rem">24/7 Emergency Response</h3>
-            <p class="text-secondary" style="font-size:1rem; line-height:1.6">Guaranteed on-site within 45 minutes, any
-              time, any day. Our rapid-response fleet is strategically deployed across the city, meaning our technicians
-              are always just minutes away when you need them most.</p>
-          </div>
-
-          <!-- Feature 3 -->
-          <div>
-            <img src="assets/images/feature_modernization.png" alt="Modernization Programs"
-              style="width:100%; height:260px; object-fit:cover; border-radius:var(--radius-lg); box-shadow:0 15px 35px rgba(0,0,0,0.15); margin-bottom:1.5rem" />
-            <div class="icon-circle mb-4" style="width:40px; height:40px; font-size:1.2rem"><i
-                class="ph ph-arrows-clockwise"></i></div>
-            <h3 class="font-display text-2xl font-bold" style="margin-bottom:.75rem">Modernization Programs</h3>
-            <p class="text-secondary" style="font-size:1rem; line-height:1.6">Breathe new life into aging systems. From
-              aesthetic cabin refits to full microprocessor and variable frequency drive (VFD) upgrades, we can
-              transform your 20-year-old elevator into a state-of-the-art machine.</p>
-          </div>
-
         </div>
+      </div>
+    </div>
 
+    <!-- Inspection & Safety Checks -->
+    <div class="section">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:3rem">
+          <div class="section-label" style="justify-content:center">Inspection &amp; Safety Checks</div>
+          <h2 class="font-display text-4xl font-bold" style="max-width:580px;margin:0 auto .75rem">Full Regulatory Compliance — Every Time</h2>
+          <p class="text-secondary" style="max-width:500px;margin:0 auto;font-size:.95rem">Our accredited inspection teams carry out thorough statutory checks in line with Dubai Municipality (DM), DEWA, and international EN 81 / ASME A17.1 standards.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem">
+          <div class="home-service-card" style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.75rem">
+            <div class="home-service-icon" style="flex-shrink:0;margin-bottom:0"><i class="ph ph-clipboard"></i></div>
+            <div>
+              <div class="home-service-title">Annual Statutory Inspection</div>
+              <div class="home-service-desc">Mandatory government-required annual inspections with official certification issued within 5 working days of a passed inspection.</div>
+            </div>
+          </div>
+          <div class="home-service-card" style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.75rem">
+            <div class="home-service-icon" style="flex-shrink:0;margin-bottom:0"><i class="ph ph-shield-check"></i></div>
+            <div>
+              <div class="home-service-title">Load &amp; Safety Device Testing</div>
+              <div class="home-service-desc">Rated load testing, governor rope checks, buffer impact tests, and full safety chain verification to ASME A17.1 standards.</div>
+            </div>
+          </div>
+          <div class="home-service-card" style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.75rem">
+            <div class="home-service-icon" style="flex-shrink:0;margin-bottom:0"><i class="ph ph-fire"></i></div>
+            <div>
+              <div class="home-service-title">Fire Recall &amp; Evacuation Mode Test</div>
+              <div class="home-service-desc">Verification of Phase I and Phase II firefighter emergency operation as mandated by local civil defence requirements.</div>
+            </div>
+          </div>
+          <div class="home-service-card" style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.75rem">
+            <div class="home-service-icon" style="flex-shrink:0;margin-bottom:0"><i class="ph ph-door"></i></div>
+            <div>
+              <div class="home-service-title">Door Operation &amp; Entrapment Check</div>
+              <div class="home-service-desc">Full door cycle testing including reopening force, closing speed, nudging mode, and mechanical interlock integrity assessments.</div>
+            </div>
+          </div>
+          <div class="home-service-card" style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.75rem">
+            <div class="home-service-icon" style="flex-shrink:0;margin-bottom:0"><i class="ph ph-chart-bar"></i></div>
+            <div>
+              <div class="home-service-title">Energy Performance Audit</div>
+              <div class="home-service-desc">Power consumption benchmarking and recommendations to optimise VFD settings, reducing your building's energy costs.</div>
+            </div>
+          </div>
+          <div class="home-service-card" style="display:flex;align-items:flex-start;gap:1.25rem;padding:1.75rem">
+            <div class="home-service-icon" style="flex-shrink:0;margin-bottom:0"><i class="ph ph-certificate"></i></div>
+            <div>
+              <div class="home-service-title">Compliance Certificate Issuance</div>
+              <div class="home-service-desc">Digital compliance certificates delivered via client portal — instantly available for building audits, insurance renewals, and permit applications.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repair & Breakdown Services -->
+    <div class="section" style="background:var(--bg-secondary)">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+          <div>
+            <div class="section-label">Repair &amp; Breakdown Services</div>
+            <h2 class="font-display text-4xl font-bold" style="margin-bottom:1.25rem">When It Breaks — We're There in 45 Minutes</h2>
+            <p class="text-secondary" style="margin-bottom:2rem;line-height:1.75">Our round-the-clock emergency response fleet is strategically positioned across the city. From passenger entrapments to complete drive failures, our certified engineers carry 95% of critical spare parts on every van.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem">
+              <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem;text-align:center">
+                <div style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--gold)">&lt;45m</div>
+                <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-top:.25rem">Guaranteed Response</div>
+              </div>
+              <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem;text-align:center">
+                <div style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--gold)">95%</div>
+                <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-top:.25rem">First-Visit Fix Rate</div>
+              </div>
+              <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem;text-align:center">
+                <div style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--gold)">24/7</div>
+                <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-top:.25rem">365 Days a Year</div>
+              </div>
+              <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem;text-align:center">
+                <div style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--gold)">All Brands</div>
+                <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-top:.25rem">OEM Cross-Trained</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap">
+              <a class="btn btn-gold" href="contact.html"><i class="ph ph-phone"></i> Emergency Hotline</a>
+              <a class="btn btn-outline" href="pricing.html">Service Plans</a>
+            </div>
+          </div>
+          <div>
+            <img src="assets/images/emergency_van.jpg" alt="VertEx Emergency Response Van" style="width:100%;border-radius:var(--radius-xl);box-shadow:0 20px 50px rgba(0,0,0,.3);object-fit:cover;max-height:460px" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Industries Served -->
+    <div class="section" style="background:var(--bg-primary)">
+      <div class="container text-center">
+        <div class="section-label" style="justify-content:center">Industries / Properties We Serve</div>
+        <h2 class="font-display text-4xl font-bold" style="margin-bottom:3rem">Expertise Across Every Sector</h2>
+        <div class="industries-grid text-left">
+          <div class="industry-card">
+            <div class="industry-card-img"><img src="assets/images/sector_commercial.png" alt="Commercial Real Estate" /></div>
+            <div class="industry-card-body">
+              <div class="industry-card-title">Commercial Offices</div>
+              <div class="industry-card-desc">High-traffic volume management and destination dispatch optimisation for corporate towers.</div>
+            </div>
+          </div>
+          <div class="industry-card">
+            <div class="industry-card-img"><img src="assets/images/sector_residential.png" alt="Luxury Residential" /></div>
+            <div class="industry-card-body">
+              <div class="industry-card-title">Luxury Residential</div>
+              <div class="industry-card-desc">Quiet operation, aesthetic maintenance, and premium service SLAs for high-end communities.</div>
+            </div>
+          </div>
+          <div class="industry-card">
+            <div class="industry-card-img"><img src="assets/images/sector_industrial.png" alt="Retail &amp; Malls" /></div>
+            <div class="industry-card-body">
+              <div class="industry-card-title">Retail &amp; Malls</div>
+              <div class="industry-card-desc">Heavy-duty escalator and travelator maintenance to ensure continuous shopper flow.</div>
+            </div>
+          </div>
+          <div class="industry-card">
+            <div class="industry-card-img"><img src="assets/images/global_footprint.jpg" alt="Healthcare Facilities" /></div>
+            <div class="industry-card-body">
+              <div class="industry-card-title">Healthcare Facilities</div>
+              <div class="industry-card-desc">Priority response for critical patient-transfer bed lifts with strict hygiene protocols.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Areas -->
+    <div class="section" style="background:var(--bg-secondary)">
+      <div class="container text-center">
+        <div class="section-label" style="justify-content:center">Service Areas</div>
+        <h2 class="font-display text-4xl font-bold" style="margin-bottom:1rem">Covering the Entire UAE</h2>
+        <p class="text-secondary" style="max-width:500px;margin:0 auto 3rem;font-size:.95rem">Our rapid-response fleet is stationed across the Emirates to ensure our 45-minute emergency SLA is met every single time.</p>
+        <div class="service-areas-grid">
+          <div class="service-area-pill"><i class="ph ph-map-pin"></i> <span>Dubai (HQ)</span></div>
+          <div class="service-area-pill"><i class="ph ph-map-pin"></i> <span>Abu Dhabi</span></div>
+          <div class="service-area-pill"><i class="ph ph-map-pin"></i> <span>Sharjah</span></div>
+          <div class="service-area-pill"><i class="ph ph-map-pin"></i> <span>Ajman</span></div>
+          <div class="service-area-pill"><i class="ph ph-map-pin"></i> <span>Ras Al Khaimah</span></div>
+          <div class="service-area-pill"><i class="ph ph-map-pin"></i> <span>Fujairah</span></div>
+          <div class="service-area-pill"><i class="ph ph-map-pin"></i> <span>Umm Al Quwain</span></div>
+          <div class="service-area-pill"><i class="ph ph-map-pin"></i> <span>Al Ain</span></div>
+        </div>
       </div>
     </div>
 
